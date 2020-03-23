@@ -1,0 +1,42 @@
+@import "../../../scss/constants.scss";
+
+.container {
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+  position: relative;
+
+  &::after {
+    position: fixed;
+    content: "";
+    background: $primary-color;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: calc((100vw - 1920px) / 2);
+    height: 100vh;
+    z-index: 20;
+  }
+}
+
+.textContentColumn {
+  width: calc(100% / 3);
+}
+
+.videoColumn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: calc(100% / 3 * 2);
+}
+
+@media (max-width: 779px) {
+  .textContentColumn {
+    width: 100%;
+  }
+
+  .videoColumn {
+    display: none;
+  }
+}

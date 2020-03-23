@@ -1,0 +1,9 @@
+[[redirects]]
+  from = "/supporters"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/faq"
+  to = "/"
+  status = 302

@@ -19,6 +19,15 @@
   }
 }
 
+@mixin spot($diameter, $color) {
+  height: $diameter;
+  width: $diameter;
+  border-radius: 50%;
+  background: $color;
+  position: absolute;
+  z-index: 11;
+}
+
 // Default text style for headings
 @mixin title-text($color) {
 }

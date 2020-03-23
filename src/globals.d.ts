@@ -18,6 +18,11 @@ declare module "*.png" {
   export = content
 }
 
+declare module "*.jpg" {
+  const content: string
+  export = content
+}
+
 declare module "*.json" {
   const content: string
   export = content

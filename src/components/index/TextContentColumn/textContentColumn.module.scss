@@ -1,0 +1,292 @@
+@import "../../../scss/constants.scss";
+@import "../../../scss/mixins.scss";
+
+.container {
+  width: 85%;
+  margin: auto;
+  position: relative;
+}
+
+.mobileBackgroundContainer {
+  position: relative;
+  &::before {
+    display: none;
+    content: "";
+    height: 100%;
+    width: 110vw;
+    position: absolute;
+    top: 0;
+    left: calc(-15% / 2);
+    background: $primary-color;
+    z-index: 0;
+  }
+}
+
+.headerLinks {
+  padding-top: 56px;
+  z-index: 3;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+
+    &:last-child {
+      display: none;
+    }
+  }
+}
+
+.titleContainer {
+  margin-top: 130px;
+  position: relative;
+
+  svg {
+    max-width: 100%;
+  }
+}
+
+.videoContainer {
+  position: relative;
+  transform: translateY(50px);
+}
+
+.video {
+  display: none;
+  z-index: 3;
+  border-radius: 15px;
+  position: relative;
+  padding-bottom: 72.5%;
+  height: 0;
+  overflow: hidden;
+  max-width: calc(100%);
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: calc(100% + 0px);
+    height: calc(100% + 0px);
+    z-index: 11;
+  }
+}
+.gofundmeContainer {
+  display: none;
+}
+
+.gofundmeButton {
+  padding: 14px 36px;
+  border-radius: 37px;
+  background-color: #01b964;
+  border: 0;
+  cursor: pointer;
+}
+
+.byline {
+  display: none;
+  opacity: 0.8;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.gofundmeLinkDonate {
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.donateByline {
+  opacity: 0.84;
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #1d2433;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.textContainer {
+  margin-top: 71px;
+}
+
+.textContent {
+  opacity: 0.5;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.07;
+  letter-spacing: normal;
+  color: #1d2433;
+}
+
+.overlayContainer {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.overlayTop {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background: rgb(245, 249, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(245, 249, 255, 1) 0%,
+    rgba(245, 249, 255, 0.8519782913165266) 60%,
+    rgba(245, 249, 255, 0) 100%
+  );
+}
+
+.overlayBottom {
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: rgb(245, 249, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(245, 249, 255, 1) 0%,
+    rgba(245, 249, 255, 0.8519782913165266) 60%,
+    rgba(245, 249, 255, 0) 100%
+  );
+}
+
+.bmaLogo {
+  display: none;
+  margin-top: 56px;
+}
+
+.signatures {
+  img {
+    max-width: 100%;
+  }
+}
+
+.spot1 {
+  display: none;
+  @include spot(16px, #b4e2ff);
+  top: -16px;
+  left: -3%;
+}
+
+.spot2 {
+  display: none;
+  @include spot(16px, #ffd167);
+  top: -28px;
+  right: 35%;
+}
+
+.spot3 {
+  display: none;
+  @include spot(16px, #b4e2ff);
+  top: -28px;
+  right: -1%;
+}
+
+.spot4 {
+  display: none;
+  @include spot(39px, #1574f6);
+  bottom: -68px;
+  left: 0;
+}
+
+.spot5 {
+  display: none;
+  @include spot(28px, #b4e2ff);
+  bottom: -60px;
+  right: 5%;
+}
+
+@media (max-width: 779px) {
+  .container {
+    width: 90%;
+  }
+  .overlayContainer,
+  .overlayTop,
+  .overlayBottom {
+    display: none;
+  }
+
+  .headerLinks {
+    a:last-child {
+      display: block;
+    }
+  }
+
+  .spot1,
+  .spot2,
+  .spot3,
+  .spot4,
+  .spot5,
+  .mobileBackgroundContainer::before,
+  .byline,
+  .video {
+    display: block;
+  }
+  .bmaLogo {
+    display: inline-block;
+  }
+
+  .gofundmeContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .gofundmeLink {
+    display: inline-block;
+  }
+
+  .logoContainer {
+    margin: 0;
+    padding: 0;
+    padding-top: 16px;
+  }
+
+  .titleContainer {
+    margin-top: 71px;
+  }
+
+  .headerLinks,
+  .titleContainer {
+    path {
+      fill: white;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .logo {
+    transform: scale(0.8);
+    margin-left: -18px;
+  }
+}

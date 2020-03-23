@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Stop The Spread`,
-    description: ``,
+    title: `H E R O E S`,
+    description: `Help them, help us. Donate today to support, in big and small ways, the welfare and wellbeing of NHS staff as they fight COVID-19`,
     language: `en`,
-    ogLanguage: `en_us`,
-    siteUrl: `http://localhost`,
+    ogLanguage: `en_gb`,
+    siteUrl: `https://www.helpthemhelpus.co.uk`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -15,6 +15,25 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "UA-161578604-1",
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: true,
+        // Setting this parameter is optional
+        anonymize: false,
+        // Setting this parameter is also optional
+        respectDNT: true,
+        // Avoids sending pageview hits from custom paths
+        // exclude: ["/preview/**", "/do-not-track/me/too/"],
+        // Delays sending pageview hits on route update (in milliseconds)
+        pageTransitionDelay: 0,
+      },
+    },
+    `gatsby-plugin-netlify`,
+    `gatsby-plugin-sitemap`,
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     {
@@ -38,6 +57,14 @@ module.exports = {
     // },
     `gatsby-plugin-typescript`,
     `gatsby-plugin-sass`,
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /\.inline\.svg$/,
+        },
+      },
+    },
     {
       resolve: "gatsby-plugin-prefetch-google-fonts",
       options: {
