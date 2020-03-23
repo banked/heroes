@@ -39,10 +39,32 @@
   }
 }
 
-.bmaLogo {
+.supportedByContainer {
+  display: flex;
+  align-items: center;
   position: absolute;
   bottom: 10px;
   right: 10px;
+  text-decoration: none;
+}
+
+.text {
+  margin-right: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.bmaLogo {
+  max-width: 115px;
 }
 
 .rightColumn {

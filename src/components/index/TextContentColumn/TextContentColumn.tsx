@@ -9,6 +9,7 @@ import Title from "../../../images/help_them_help_us.inline.svg"
 import gofundmeLogo from "../../../images/gofundme.svg"
 import signatures from "../../../images/signatures.svg"
 import bmaMobile from "../../../images/bma.png"
+import nhsCharity from "../../../images/nhscharity.png"
 
 const TextContentColumn = () => {
   return (
@@ -82,18 +83,18 @@ const TextContentColumn = () => {
             Thank you for agreeing to help out with this endeavour. Our mission
             statement is to support, in big and small ways, the welfare and
             wellbeing of NHS staff as they fight COVID-19. We want to get things
-            going ASAP. The virus is moving faster, so to support the staff on
-            the frontline we want to move faster.
+            going ASAP. The virus is moving fast, so in order to support the
+            staff on the frontline we need to move even faster.
           </p>
           <p className={styles.textContent}>
             We want to provide an avenue for the public to help out the effort.
-            Our aims are to support the physical, mental and spiritual wellbeing
-            of NHS staff across the nation. Physically to support the protection
-            of staff and to help donate to large research projects. Mentally we
-            aim to provide counselling and psychological services. Spiritually
-            we will set up a hassle-free small grants service to support
-            childcare, transport, to provide perks for hospital facilities and
-            more. We will also provide public and professional education
+            Our aims are to support the physical, mental, and day to day
+            wellbeing of NHS staff across the nation. Physically to support the
+            protection of our staff on the frontline. Mentally we aim to provide
+            counselling and psychological services. Day to day we want to set up
+            a hassle-free small grants service to support childcare, transport,
+            to provide perks for hospital facilities and more. We want to use
+            our platform to also provide public and professional education
             resources on coronavirus, and build a cross-professional platform to
             help share tips and advice.
           </p>
@@ -111,9 +112,18 @@ const TextContentColumn = () => {
           href="https://www.bma.org.uk/"
           target="_blank"
           rel="noopener noreferrer"
+          className={styles.supportLink}
         >
           <img className={styles.bmaLogo} src={bmaMobile} alt="" />
         </a>
+        {/* <a
+          href="https://www.nhscharitiestogether.co.uk/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.supportLink}
+        >
+          <img className={styles.nhsCharity} src={nhsCharity} alt="" />
+        </a> */}
       </div>
       <Footer />
     </>

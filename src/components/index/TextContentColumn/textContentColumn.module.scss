@@ -180,9 +180,32 @@
   );
 }
 
-.bmaLogo {
+.nhsCharity {
   display: none;
+  margin-top: 10px;
+  max-width: 120px;
+}
+
+.bmaLogo {
+  // display: none;
   margin-top: 56px;
+}
+
+.supportLink {
+  display: block;
+  text-decoration: none;
+}
+
+.text {
+  opacity: 0.8;
+  font-size: 13.5px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.07;
+  letter-spacing: normal;
+  color: #1d2433;
+  text-transform: uppercase;
 }
 
 .signatures {
@@ -252,6 +275,8 @@
   .video {
     display: block;
   }
+
+  .nhsCharity,
   .bmaLogo {
     display: inline-block;
   }

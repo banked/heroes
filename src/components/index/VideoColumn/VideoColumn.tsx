@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 import * as styles from "./videoColumn.module.scss"
 
-import bma from "../../../images/bma.png"
+import bma from "../../../images/nhscharity.png"
 
 const VideoColumn = () => {
   return (
@@ -50,7 +50,9 @@ const VideoColumn = () => {
           href="https://www.bma.org.uk/"
           target="_blank"
           rel="noopener noreferrer"
+          className={styles.supportedByContainer}
         >
+          <span className={styles.text}>Raising in aid of</span>
           <img className={styles.bmaLogo} src={bma} alt="" />
         </a>
       </div>
