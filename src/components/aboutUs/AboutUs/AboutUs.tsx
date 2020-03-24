@@ -49,10 +49,10 @@ const teamContent = [
   {
     image: dawson,
     name: "Dr Michelle Dawson",
-    position: "Consultant Anaesthetist, Derby",
+    position: "Consultant Anaesthetist",
     quote:
       "Clinical Advisor to NHS England, worked part time in medical procurement for 10 years, developed the Life Science Industry Register, and is a board member of National Association of Medical Devices Educators and Trainers.",
-    twitterHandle: "MedicWeary",
+    twitterHandle: "juniordrblog",
   },
   {
     image: djelal,

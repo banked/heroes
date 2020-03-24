@@ -116,14 +116,6 @@ const TextContentColumn = () => {
         >
           <img className={styles.bmaLogo} src={bmaMobile} alt="" />
         </a>
-        {/* <a
-          href="https://www.nhscharitiestogether.co.uk/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.supportLink}
-        >
-          <img className={styles.nhsCharity} src={nhsCharity} alt="" />
-        </a> */}
       </div>
       <Footer />
     </>
