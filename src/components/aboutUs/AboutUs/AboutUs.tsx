@@ -51,8 +51,8 @@ const teamContent = [
     name: "Dr Michelle Dawson",
     position: "Consultant Anaesthetist",
     quote:
-      "Clinical Advisor to NHS England, worked part time in medical procurement for 10 years, developed the Life Science Industry Register, and is a board member of National Association of Medical Devices Educators and Trainers.",
-    twitterHandle: "juniordrblog",
+      "Clinical Advisor to NHS England on the Life Science Industry Register, Trust clinical lead in medical procurement for 10 years and is a board member of National Association of Medical Devices Educators and Trainers.",
+    twitterHandle: "MedicWeary",
   },
   {
     image: djelal,
