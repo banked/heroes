@@ -26,15 +26,12 @@ const AboutUs = () => {
         <h6 className={styles.name}>Joe Cole</h6>
         <p className={styles.position}>Former England Footballer</p>
         <p className={styles.biography}>
-          From his first debut in 1999 at West Ham to his exceptional years at
-          Chelsea, Liverpool and Aston Villa, Joe Cole captivated the football
-          world with his versatile and technical play. He won numerous trophies,
-          including the Premier League and FA Cup, as well as scoring 10 goals
-          for the English national team.
-        </p>
-        <p className={styles.biography}>
-          Joe is passionate about supporting the NHS Heroes that help keep us
-          all safe. He is proud to be an Ambassador.
+          Joe Cole, former England Footballer and now BT Sport pundit, has
+          committed his dedication to the cause as an ambassador for Heroes and
+          will play a key role in leading this important initiative to help NHS
+          workers on the front line. Joe is passionate about this project and
+          has offered to support the initiative not just in the short term but
+          beyond and has also donated a generous £25,000 of his own money.
         </p>
         <a
           className={styles.instagramLink}
