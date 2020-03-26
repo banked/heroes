@@ -57,8 +57,7 @@ const teamContent = [
   {
     image: djelal,
     name: "Nej D'jelal",
-    position:
-      "Managing Director, Head of Electronic Equities and Quant Prime Services Product, EMEA.",
+    position: "Managing Director, Electronic Trading",
     quote:
       "Co-founder of the not-for-profit Plato Partnership, with a strong professional history in electronic and algorithmic trading and financial technology.",
     twitterHandle: "NejDjelal",
