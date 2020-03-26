@@ -1,0 +1,108 @@
+@import "../../../scss/constants.scss";
+
+.container {
+  max-width: 830px;
+  width: 90%;
+  margin: auto;
+  padding-top: 56px;
+
+  path {
+    fill: #1d2433;
+  }
+}
+
+.mainImage {
+  width: 100%;
+}
+
+.contentContainer {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.donateContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  font-size: 42px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #3b3b4d;
+}
+
+.byline {
+  opacity: 0.9;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  text-align: center;
+  color: #3b3b4d;
+  max-width: 790px;
+  margin: auto;
+  margin-bottom: 53px;
+}
+
+.instagramLink {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #1574f6;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.position {
+  opacity: 0.8;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #3b3b4d;
+  margin: 0;
+}
+
+.biography {
+  opacity: 0.7;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #3b3b4d;
+}
+
+.donate-text {
+  font-size: 17px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #1d2433;
+  margin: 0;
+  margin-right: 20px;
+}

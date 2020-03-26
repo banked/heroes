@@ -91,9 +91,6 @@ const Footer = ({ hideDonate = false }: { hideDonate?: boolean }) => {
           <Link to={"/about-us"} className={styles.footerLink}>
             About us
           </Link>
-          <Link to={"/ambassadors"} className={styles.footerLink}>
-            Ambassadors
-          </Link>
         </div>
         <p className={styles.copyright}>© Heroes {new Date().getFullYear()}</p>
       </div>
