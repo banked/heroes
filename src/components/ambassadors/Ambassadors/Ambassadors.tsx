@@ -14,7 +14,7 @@ const AboutUs = () => {
       <Link to="/">
         <Logo />
       </Link>
-      <h1 className={styles.heading}>Heroes Ambassador</h1>
+      <h1 className={styles.heading}>Ambassadors</h1>
       <h4 className={styles.byline}>
         HEROES relies on generous contributions from our donors, volunteers, and
         partners to help our frontline NHS staff. Our ambassadors help us
