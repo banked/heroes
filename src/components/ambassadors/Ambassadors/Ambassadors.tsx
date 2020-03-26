@@ -26,7 +26,7 @@ const AboutUs = () => {
         <h6 className={styles.name}>Joe Cole</h6>
         <p className={styles.position}>Former England Footballer</p>
         <p className={styles.biography}>
-          Joe Cole, former England Footballer and now BT Sport pundit, has
+          Former England Footballer and now BT Sport pundit, Joe Cole has
           committed his dedication to the cause as an ambassador for Heroes and
           will play a key role in leading this important initiative to help NHS
           workers on the front line. Joe is passionate about this project and
