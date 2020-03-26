@@ -25,20 +25,16 @@ const AboutUs = () => {
       <div className={styles.contentContainer}>
         <h6 className={styles.name}>Joe Cole</h6>
         <p className={styles.position}>Former England Footballer</p>
-        <p className={styles.position}>Philanthropist</p>
         <p className={styles.biography}>
-          Joseph John Cole (born 8 November 1981) is an English football coach
-          and former professional footballer who played as an attacking
-          midfielder or winger in the Premier League, Ligue 1, League One and
-          United Soccer League.
+          From his first debut in 1999 at West Ham to his exceptional years at
+          Chelsea, Liverpool and Aston Villa, Joe Cole captivated the football
+          world with his versatile and technical play. He won numerous trophies,
+          including the Premier League and FA Cup, as well as scoring 10 goals
+          for the English national team.
         </p>
         <p className={styles.biography}>
-          Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident.
+          Joe is passionate about supporting the NHS Heroes that help keep us
+          all safe. He is proud to be an Ambassador.
         </p>
         <a
           className={styles.instagramLink}
