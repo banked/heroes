@@ -36,6 +36,16 @@
     text-align: center;
     color: #1574f6;
     text-decoration: none;
+
+    &:first-child {
+      @media (max-width: 917px) {
+        display: none;
+      }
+    }
+
+    &:last-child {
+      margin-left: 20px;
+    }
   }
 }
 

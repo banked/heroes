@@ -29,6 +29,9 @@ const VideoColumn = () => {
       </div>
       <div className={styles.leftColumn}>
         <div className={styles.headerLinks}>
+          <Link className={styles.headerLink} to="/ambassadors">
+            Ambassadors
+          </Link>
           <Link className={styles.headerLink} to="/about-us">
             About Us
           </Link>
