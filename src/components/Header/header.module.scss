@@ -10,7 +10,14 @@
   align-items: center;
 }
 
-.smallLogo {
+.desktopContent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoSmall {
   display: none;
 }
 
@@ -38,6 +45,10 @@
   @media (max-width: 779px) {
     display: none;
   }
+}
+
+.removePadding {
+  display: none;
 }
 
 .dropdownContainer {
@@ -99,6 +110,7 @@
   }
 
   .removePadding {
+    display: flex;
     .popoutContainer {
       padding-right: 0px;
     }

@@ -25,32 +25,30 @@ const links = [
   },
 ]
 
-const Header = ({
-  paddingLeftAndRight = true,
-}: {
-  paddingLeftAndRight?: boolean
-}) => {
+const Header = ({ homepage = false }: { homepage?: boolean }) => {
   return (
     <div
       className={classnames(
         styles.container,
-        !paddingLeftAndRight ? styles.removePadding : null
+        homepage ? styles.removePadding : null
       )}
     >
-      <Link className={styles.logoLink} to="/">
-        <div className={styles.logoLarge}>
-          <Logo />
+      <div className={styles.desktopContent}>
+        <Link className={styles.logoLink} to="/">
+          <div className={styles.logoLarge}>
+            <Logo />
+          </div>
+          <div className={styles.logoSmall}>
+            <LogoSmall />
+          </div>
+        </Link>
+        <div className={styles.links}>
+          <div className={styles.dropdownContainer}>
+            <DropDownMenu />
+          </div>
+          <span className={styles.donateText}>Donate Now</span>
+          <GofundmeButton />
         </div>
-        <div className={styles.logoSmall}>
-          <LogoSmall />
-        </div>
-      </Link>
-      <div className={styles.links}>
-        <div className={styles.dropdownContainer}>
-          <DropDownMenu />
-        </div>
-        <span className={styles.donateText}>Donate Now</span>
-        <GofundmeButton />
       </div>
       <div className={styles.popoutContainer}>
         <PopoutMenu links={links} />
