@@ -1,4 +1,9 @@
 [[redirects]]
+  from = "/about-us"
+  to = "/team"
+  status = 301
+
+[[redirects]]
   from = "/supporters"
   to = "/"
   status = 301

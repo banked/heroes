@@ -1,6 +1,6 @@
 import React from "react"
 import Footer from "../../Footer"
-import { Link } from "gatsby"
+import Header from "../../Header"
 
 import * as styles from "./textContentColumn.module.scss"
 
@@ -20,15 +20,8 @@ const TextContentColumn = () => {
           <div className={styles.overlayBottom}></div>
         </div>
         <div className={styles.mobileBackgroundContainer}>
-          <div className={styles.LinksContainer}>
-            <div className={styles.headerLinks}>
-              <Link className={styles.logo} to="/">
-                <Logo />
-              </Link>
-              <Link className={styles.headerLink} to="/about-us">
-                About Us
-              </Link>
-            </div>
+          <div className={styles.linksContainer}>
+            <Header paddingLeftAndRight={false} />
           </div>
           <div className={styles.titleContainer}>
             <Title />

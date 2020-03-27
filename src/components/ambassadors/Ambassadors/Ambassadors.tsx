@@ -11,9 +11,6 @@ import joeColeInstagram from "../../../images/joe_cole_instagram.png"
 const AboutUs = () => {
   return (
     <div className={styles.container}>
-      <Link to="/">
-        <Logo />
-      </Link>
       <h1 className={styles.heading}>Ambassadors</h1>
       <h4 className={styles.byline}>
         HEROES relies on generous contributions from our donors, volunteers, and
@@ -42,8 +39,6 @@ const AboutUs = () => {
           <img className={styles.instagram} src={joeColeInstagram} alt="" />
         </a>
       </div>
-
-      <Footer />
     </div>
   )
 }

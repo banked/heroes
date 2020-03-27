@@ -1,0 +1,119 @@
+@import "../../../scss/constants.scss";
+@import "../../../scss/mixins.scss";
+
+.menu {
+  display: none;
+  height: 30px;
+  width: 39px;
+}
+
+.menuButton {
+  cursor: pointer;
+  z-index: 50;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.menuContainer {
+  display: none;
+  height: 100vh;
+  // overflow-y: scroll;
+  width: 100vw;
+  background: $primary-color;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  align-items: center;
+  z-index: 20;
+}
+
+.menuActive {
+  display: flex;
+}
+
+.menu-wrapper {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.logoWrapper {
+  width: 150px;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.logo {
+  width: 150px;
+  padding-bottom: 80px;
+}
+
+.menuContent {
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+
+  a {
+    text-decoration: none;
+    margin: 8px auto;
+    color: #ffffff;
+  }
+}
+
+.link,
+.break,
+.tagline {
+  display: block;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.5;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.tagline {
+  font-size: 14px;
+  letter-spacing: 0.7px;
+}
+
+.close {
+  position: absolute;
+  top: 28px;
+  right: 48px;
+  height: 28px;
+  width: 28px;
+  cursor: pointer;
+}
+
+// .menu {
+//   svg {
+//     path {
+//       fill: $dark-color;
+//       transition-property: fill;
+//       transition-duration: 0.1s;
+//       transition-timing-function: linear;
+//     }
+//   }
+// }
+
+.menuActive {
+  svg {
+    path {
+      fill: white;
+    }
+  }
+}
+
+@media (max-width: 779px) {
+  .menu {
+    display: block;
+  }
+}

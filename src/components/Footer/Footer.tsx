@@ -88,11 +88,14 @@ const Footer = ({ hideDonate = false }: { hideDonate?: boolean }) => {
           </a>
         </div>
         <div className={styles.linkContainer}>
-          <Link to={"/about-us"} className={styles.footerLink}>
-            About us
+          <Link to={"/team"} className={styles.footerLink}>
+            Team
           </Link>
           <Link to={"/ambassadors"} className={styles.footerLink}>
             Ambassadors
+          </Link>
+          <Link to={"/contact-us"} className={styles.footerLink}>
+            Contact Us
           </Link>
         </div>
         <p className={styles.copyright}>© Heroes {new Date().getFullYear()}</p>

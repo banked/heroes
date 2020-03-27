@@ -3,7 +3,7 @@ import React from "react"
 
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
-import BasicPage from "../templates/BasicPage"
+import Homepage from "../templates/Homepage"
 import Hero from "../components/index/Hero"
 
 const IndexPage = () => {
@@ -13,9 +13,9 @@ const IndexPage = () => {
         title="Home"
         description="Help them, help us. Donate today to support, in big and small ways, the welfare and wellbeing of NHS staff as they fight COVID-19"
       />
-      <BasicPage>
+      <Homepage>
         <Hero />
-      </BasicPage>
+      </Homepage>
     </Layout>
   )
 }

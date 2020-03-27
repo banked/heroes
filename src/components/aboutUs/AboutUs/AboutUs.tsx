@@ -81,9 +81,6 @@ const teamContent = [
 const AboutUs = () => {
   return (
     <div className={styles.container}>
-      <Link to="/">
-        <Logo />
-      </Link>
       <div className={styles.headingContainer}>
         <h1 className={styles.title}>Team</h1>
         <p className={styles.byline}>

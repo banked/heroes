@@ -1,10 +1,8 @@
 import React from "react"
 import GofundmeButton from "../shared/GofundmeButton"
-import { Link } from "gatsby"
+import DropDownMenu from "../../shared/DropDownMenu"
 
 import * as styles from "./videoColumn.module.scss"
-
-import bma from "../../../images/bma.png"
 
 const VideoColumn = () => {
   return (
@@ -28,13 +26,8 @@ const VideoColumn = () => {
         </div>
       </div>
       <div className={styles.leftColumn}>
-        <div className={styles.headerLinks}>
-          <Link className={styles.headerLink} to="/ambassadors">
-            Ambassadors
-          </Link>
-          <Link className={styles.headerLink} to="/about-us">
-            About Us
-          </Link>
+        <div className={styles.dropDownMenuContainer}>
+          <DropDownMenu />
         </div>
       </div>
       <div className={styles.rightColumn}>

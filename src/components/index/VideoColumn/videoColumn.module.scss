@@ -17,36 +17,6 @@
 .leftColumn {
   width: 50%;
   position: relative;
-
-  .headerLinks {
-    position: absolute;
-    top: 60px;
-    right: 51px;
-  }
-
-  .headerLink {
-    margin-left: 40;
-    text-transform: uppercase;
-    font-size: 17px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 1px;
-    text-align: center;
-    color: #1574f6;
-    text-decoration: none;
-
-    &:first-child {
-      @media (max-width: 917px) {
-        display: none;
-      }
-    }
-
-    &:last-child {
-      margin-left: 20px;
-    }
-  }
 }
 
 .supportedByContainer {

@@ -3,17 +3,17 @@ import React from "react"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import BasicPage from "../templates/BasicPage"
-import Ambassadors from "../components/ambassadors/Ambassadors"
+import ContactUs from "../components/contactUs/ContactUs"
 
-const AmbassadorsPage = () => {
+const ContactUsPage = () => {
   return (
     <Layout>
-      <SEO title="Ambassadors" />
+      <SEO title="Contact Us" />
       <BasicPage>
-        <Ambassadors />
+        <ContactUs />
       </BasicPage>
     </Layout>
   )
 }
 
-export default AmbassadorsPage
+export default ContactUsPage

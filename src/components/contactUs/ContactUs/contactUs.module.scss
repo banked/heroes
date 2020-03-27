@@ -1,0 +1,76 @@
+@import "../../../scss/constants.scss";
+
+.container {
+  max-width: 790px;
+  width: 90%;
+  margin: auto;
+  padding-top: 56px;
+  padding-bottom: 100px;
+}
+
+.contentContainer {
+  position: relative;
+  margin-top: 20px;
+}
+
+.heading {
+  font-size: 42px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #3b3b4d;
+}
+
+.byline {
+  opacity: 0.9;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  text-align: center;
+  color: #3b3b4d;
+  max-width: 790px;
+  margin: auto;
+  margin-bottom: 53px;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  max-width: 400px;
+  width: 100%;
+  height: 59px;
+  border-radius: 6px;
+  box-shadow: 0 8px 0 0 #1574f6;
+  background-color: #5045fd;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.buttonText {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.googleFormsLogo {
+  display: block;
+  margin: auto;
+}
