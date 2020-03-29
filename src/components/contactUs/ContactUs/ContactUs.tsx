@@ -24,9 +24,11 @@ const ContactUs = () => {
     <div className={styles.container}>
       <h1 className={styles.heading}>Get in touch</h1>
       <h4 className={styles.byline}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitati.
+        We're working hard to support as many people as possible, and could use
+        your help! Please use one of the forms below to get in touch. Whether
+        you're writing on behalf a corporation or yourself, we welcome all
+        communication, assistance, donations, questions, or words of
+        encouragement!
       </h4>
       <div className={styles.contentContainer}>
         {links.map(link => (

@@ -111,7 +111,6 @@ const AboutUs = () => {
           </div>
         ))}
       </div>
-      <Footer hideDonate={true} />
     </div>
   )
 }

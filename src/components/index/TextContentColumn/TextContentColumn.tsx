@@ -10,7 +10,6 @@ import Title from "../../../images/help_them_help_us.inline.svg"
 import gofundmeLogo from "../../../images/gofundme.svg"
 import signatures from "../../../images/signatures.svg"
 import bmaMobile from "../../../images/bma.png"
-import nhsCharity from "../../../images/nhscharity.png"
 
 const TextContentColumn = () => {
   return (
@@ -116,7 +115,7 @@ const TextContentColumn = () => {
           <img className={styles.bmaLogo} src={bmaMobile} alt="" />
         </a>
       </div>
-      <Footer />
+      <Footer homepage={true} />
     </>
   )
 }

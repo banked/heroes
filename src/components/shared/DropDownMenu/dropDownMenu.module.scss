@@ -24,6 +24,10 @@
   .headerLinks {
     display: flex;
   }
+
+  .dropDownIcon {
+    transform: rotate(0deg);
+  }
 }
 
 .dropDownText {
@@ -41,6 +45,8 @@
 
 .dropDownIcon {
   margin-right: 8px;
+  margin-bottom: 3px;
+  transform: rotate(-90deg);
 }
 
 .headerLinks {

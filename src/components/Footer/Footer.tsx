@@ -24,9 +24,20 @@ const socials = [
   },
 ]
 
-const Footer = ({ hideDonate = false }: { hideDonate?: boolean }) => {
+const Footer = ({
+  hideDonate = false,
+  homepage = false,
+}: {
+  hideDonate?: boolean
+  homepage?: boolean
+}) => {
   return (
-    <div className={styles.container}>
+    <div
+      className={classnames(
+        styles.container,
+        homepage ? styles.homepage : null
+      )}
+    >
       <div className={styles.innerContainer}>
         {!hideDonate && (
           <div className={styles.donateLinks}>
