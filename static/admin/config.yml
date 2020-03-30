@@ -1,0 +1,13 @@
+backend:
+  name: git-gateway
+media_folder: static/assets
+public_folder: assets
+collections:
+  - name: basic-deliverable
+    label: Basic Deliverable
+    folder: static/deliverables/basic
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: image, label: Image, widget: image, required: false }
+      - { name: body, label: Content, widget: markdown }
