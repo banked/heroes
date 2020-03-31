@@ -30,8 +30,12 @@ function slugify(string) {
 
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
+const { fmImagesToRelative } = require("gatsby-remark-relative-images")
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
+  // Used to convert frontmatter image.
+  fmImagesToRelative(node)
+
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
     const slug = createFilePath({ node, getNode, basePath: `pages` })

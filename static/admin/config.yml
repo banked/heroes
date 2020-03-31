@@ -5,9 +5,51 @@ public_folder: assets
 collections:
   - name: basic-deliverable
     label: Basic Deliverable
-    folder: static/deliverables/basic
+    folder: cmsContent/deliverables/basics
     create: true
     fields:
       - { name: title, label: Title }
       - { name: image, label: Image, widget: image, required: false }
       - { name: body, label: Content, widget: markdown }
+      - {
+          name: priority,
+          label: Priority,
+          widget: number,
+          hint: "Posts will be ordered first by this number (higher numbers appear further up the page) and secondarily by their published date.",
+          default: 0,
+        }
+      - { name: publishedDate, label: Published, widget: datetime }
+  - name: video-deliverable
+    label: Video Deliverable
+    folder: cmsContent/deliverables/videos
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: videoLink, label: "Video Link", widget: string }
+      - {
+          name: priority,
+          label: Priority,
+          widget: number,
+          hint: "Posts will be ordered first by this number (higher numbers appear further up the page) and secondarily by their published date.",
+          default: 0,
+        }
+      - { name: publishedDate, label: Published, widget: datetime }
+  - name: quote-deliverable
+    label: Quote Deliverable
+    folder: cmsContent/deliverables/quotes
+    create: true
+    fields:
+      - {
+          name: title,
+          label: "Name and Position",
+          hint: "In the following format: Jason, NHS Clinician",
+        }
+      - { name: quote, label: "Quote", widget: text }
+      - {
+          name: priority,
+          label: Priority,
+          widget: number,
+          hint: "Posts will be ordered first by this number (higher numbers appear further up the page) and secondarily by their published date.",
+          default: 0,
+        }
+      - { name: publishedDate, label: Published, widget: datetime }
