@@ -1,6 +1,6 @@
 ---
 title: 82 Meals Delivered to St Bartholomew's staff
-image: assets/nintchdbpict-000374498249-e-1515532947295-1-.jpg
+image: ''
 priority: 0
 publishedDate: 2020-03-30T17:56:54.364Z
 ---
