@@ -7,6 +7,8 @@ collections:
     label: Basic Deliverable
     folder: cmsContent/deliverables/basics
     create: true
+    editor:
+      preview: false
     fields:
       - { name: title, label: Title }
       - { name: image, label: Image, widget: image, required: false }
@@ -23,9 +25,16 @@ collections:
     label: Video Deliverable
     folder: cmsContent/deliverables/videos
     create: true
+    editor:
+      preview: false
     fields:
       - { name: title, label: Title }
-      - { name: videoLink, label: "Video Link", widget: string }
+      - {
+          name: videoLink,
+          label: "Vimeo Video #",
+          widget: string,
+          hint: "Copy the #ID from the end of the link and paste here. (eg. 399659174)",
+        }
       - {
           name: priority,
           label: Priority,
@@ -38,6 +47,8 @@ collections:
     label: Quote Deliverable
     folder: cmsContent/deliverables/quotes
     create: true
+    editor:
+      preview: false
     fields:
       - {
           name: title,
