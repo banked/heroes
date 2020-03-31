@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import classnames from "classnames"
 import useOutsideClick from "../../../utils/hooks/useOutsideClick"
+import { links } from "../../Header/Header"
 
 import * as styles from "./dropDownMenu.module.scss"
 
@@ -29,15 +30,11 @@ const DropDownMenu = () => {
           About Us
         </span>
         <div className={styles.headerLinks}>
-          <Link className={styles.headerLink} to="/ambassadors">
-            Ambassadors
-          </Link>
-          <Link className={styles.headerLink} to="/team">
-            Team
-          </Link>
-          <Link className={styles.headerLink} to="/contact-us">
-            Contact Us
-          </Link>
+          {links.map(link => (
+            <Link key={link.link} className={styles.headerLink} to={link.link}>
+              {link.displayText}
+            </Link>
+          ))}
         </div>
       </div>
     </div>

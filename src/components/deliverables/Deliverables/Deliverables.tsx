@@ -1,4 +1,4 @@
-import React, { useRef } from "react"
+import React, { useRef, useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img, { FluidObject } from "gatsby-image"
 import classnames from "classnames"
@@ -100,6 +100,7 @@ const quoteTile = (data: Item) => (
 )
 
 const Deliverables = () => {
+  const [showContent, setShowContent] = useState<boolean>(false)
   const ref = useRef(null)
   const rawItems = itemsQuery()
   const items = rawItems.allMarkdownRemark.edges
@@ -112,7 +113,14 @@ const Deliverables = () => {
         already delivered meals, and masks to hospitals, with plenty more to
         come.
       </h4>
-      <Masonry className={styles.masonry}>
+      <Masonry
+        options={{ transitionDuration: 0 }}
+        onLayoutComplete={() => setShowContent(true)}
+        className={classnames(
+          styles.masonry,
+          showContent ? styles.showContent : ""
+        )}
+      >
         {items.map((item: Item) => {
           if (item.node.frontmatter.quote) {
             return quoteTile(item)

@@ -7,8 +7,11 @@
 }
 
 .masonry {
-  display: flex;
-  justify-content: space-between;
+  display: none;
+}
+
+.showContent {
+  display: block;
 }
 
 $lr-padding: 20px;

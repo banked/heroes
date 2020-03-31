@@ -1,0 +1,270 @@
+@import "../../../scss/constants.scss";
+@import "../../../scss/mixins.scss";
+
+.container {
+  width: calc(100% - 60px - 60px);
+  max-width: 1312px;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.scalingContainer {
+  transition-property: transform;
+  transition-timing-function: ease-out;
+  transition-duration: 0.3s;
+  transform: scale(1);
+}
+
+.image {
+  transform: translateZ(0);
+  overflow: hidden;
+  opacity: 0.8;
+}
+
+.tileWrapper {
+  background: white;
+  text-decoration: none;
+  border-radius: 6px;
+  overflow: hidden;
+
+  &:hover {
+    .scalingContainer {
+      transform: scale(1.05);
+    }
+
+    .image,
+    .itemHeading,
+    .textContent {
+      opacity: 1;
+    }
+  }
+}
+
+.minutes {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  color: #9b9b9b;
+  text-align: right;
+  min-width: 95px;
+  text-decoration: none;
+}
+
+.itemHeading {
+  font-family: Rubik;
+  font-size: 23px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #5f95ff;
+}
+
+.mainItemContainer {
+  display: flex;
+  margin-bottom: 62px;
+
+  .image {
+    width: 64%;
+  }
+
+  .content {
+    width: 34%;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .innerContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+    padding-right: 30px;
+    padding-bottom: 35px;
+  }
+
+  .textContent {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    color: #383646;
+  }
+
+  .minutes {
+    position: absolute;
+    bottom: 20px;
+    left: 60px;
+    text-align: left;
+  }
+}
+
+.secondaryItemsContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+
+  .itemContainer {
+    width: calc(100% / 2 - 30px);
+  }
+
+  .innerContent {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 20px 45px 30px 45px;
+  }
+}
+
+.otherItemsContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &:after {
+    content: "";
+    flex: auto;
+  }
+
+  .itemContainer {
+    margin-bottom: 60px;
+    width: 27%;
+    padding: 30px;
+  }
+
+  .itemHeading {
+    margin-bottom: 15px;
+  }
+}
+
+.image,
+.itemHeading,
+.textContent {
+  transition-property: opacity;
+  transition-timing-function: ease-out;
+  transition-duration: 0.3s;
+}
+
+@media (max-width: 1138px) {
+  .minutes {
+    font-size: 14px;
+  }
+
+  .mainItemContainer {
+    .image,
+    .content {
+      width: 50%;
+    }
+
+    .textContent {
+      margin-top: 5px;
+      font-size: 14px;
+    }
+  }
+
+  .secondaryItemsContainer {
+    .innerContent {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .itemHeading {
+      margin-bottom: 10px;
+    }
+
+    .minutes {
+      text-align: left;
+    }
+  }
+
+  .otherItemsContainer {
+    .itemContainer {
+      width: 40%;
+    }
+  }
+}
+
+@media (max-width: 943px) {
+  .container {
+    width: 90%;
+  }
+
+  .itemHeading,
+  .textContent {
+    opacity: 1;
+  }
+
+  .mainItemContainer {
+    margin-bottom: 30px;
+    .minutes {
+      bottom: 0px;
+      left: 30px;
+    }
+
+    .innerContent {
+      padding-left: 30px;
+    }
+  }
+
+  .secondaryItemsContainer {
+    margin-bottom: 0;
+
+    .innerContent {
+      padding: 30px;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin: 0;
+    }
+  }
+
+  .secondaryItemsContainer,
+  .otherItemsContainer {
+    .tileWrapper {
+      margin-bottom: 30px;
+    }
+  }
+
+  .mainItemContainer,
+  .secondaryItemsContainer {
+    display: flex;
+    flex-direction: column;
+
+    .itemContainer {
+      width: 100%;
+    }
+
+    .image,
+    .content {
+      width: 100%;
+    }
+
+    .itemHeading {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .textContent {
+      margin-bottom: 20px;
+    }
+
+    .minutes {
+      text-align: left;
+      margin-bottom: 27px;
+    }
+  }
+}
+
+@media (max-width: 669px) {
+  .otherItemsContainer {
+    .itemContainer {
+      width: 100%;
+    }
+  }
+}

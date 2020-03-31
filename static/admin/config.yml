@@ -64,3 +64,15 @@ collections:
           default: 0,
         }
       - { name: publishedDate, label: Published, widget: datetime }
+  - name: blog
+    label: Blog Post
+    folder: cmsContent/blogs
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { name: title, label: "Title" }
+      - { name: minutes, label: "Minutes to read article", widget: number }
+      - { name: image, label: Image, widget: image }
+      - { name: body, label: Content, widget: markdown }
+      - { name: publishedDate, label: Published, widget: datetime }

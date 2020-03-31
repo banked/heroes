@@ -10,7 +10,7 @@ import * as styles from "./header.module.scss"
 import Logo from "../../images/logo.inline.svg"
 import LogoSmall from "../../images/logoSmall.inline.svg"
 
-const links = [
+export const links = [
   {
     displayText: "Ambassadors",
     link: "ambassadors",
@@ -22,6 +22,18 @@ const links = [
   {
     displayText: "Get In Touch",
     link: "contact-us",
+  },
+  {
+    displayText: "Deliverables",
+    link: "deliverables",
+  },
+  {
+    displayText: "Partners",
+    link: "partners",
+  },
+  {
+    displayText: "News",
+    link: "news",
   },
 ]
 

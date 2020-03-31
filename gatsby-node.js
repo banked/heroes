@@ -30,12 +30,8 @@ function slugify(string) {
 
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
-// const { fmImagesToRelative } = require("gatsby-remark-relative-images")
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
-  // Used to convert frontmatter image.
-  // fmImagesToRelative(node)
-
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
     const slug = createFilePath({ node, getNode, basePath: `pages` })
@@ -45,4 +41,35 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       value: slug,
     })
   }
+}
+
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions
+  const result = await graphql(`
+    query {
+      allMarkdownRemark {
+        edges {
+          node {
+            frontmatter {
+              title
+            }
+            fields {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    const urlPath = slugify(node.frontmatter.title)
+    createPage({
+      path: `/news/${urlPath}`,
+      component: path.resolve(`./src/templates/NewsItemPage/NewsItemPage.tsx`),
+      context: {
+        slug: node.fields.slug,
+      },
+    })
+  })
 }
