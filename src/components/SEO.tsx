@@ -72,7 +72,7 @@ const SEO = (props: Props) => {
       <link rel="icon" type="image/png" sizes="32x32" href={favicon32} />
       <link rel="icon" type="image/png" sizes="16x16" href={favicon16} />
       <meta property="og:locale" content={site.siteMetadata.ogLanguage} />
-      <meta property="og:site_name" content="H E R O E S" />
+      <meta property="og:site_name" content="HEROES" />
       <meta property="og:url" content="https://helpthemhelpus.co.uk" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={metaDescription} />

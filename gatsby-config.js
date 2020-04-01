@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `H E R O E S`,
+    title: `HEROES`,
     description: `Help them, help us. Donate today to support, in big and small ways, the welfare and wellbeing of NHS staff as they fight COVID-19`,
     language: `en`,
     ogLanguage: `en_gb`,
