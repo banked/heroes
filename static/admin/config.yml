@@ -4,7 +4,7 @@ media_folder: static/assets
 public_folder: assets
 collections:
   - name: basic-deliverable
-    label: Basic Deliverable
+    label: Photo and Text Deliverable
     folder: cmsContent/deliverables/basics
     create: true
     editor:
@@ -65,7 +65,7 @@ collections:
         }
       - { name: publishedDate, label: Published, widget: datetime }
   - name: blog
-    label: Blog Post
+    label: News Post
     folder: cmsContent/blogs
     create: true
     editor:
