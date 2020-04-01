@@ -30,15 +30,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-page-creator`,
-      options: {
-        path: `${__dirname}/src/pages`,
-        ignore: {
-          patterns: ["**/partners.tsx", "**/news.tsx", "**/deliverables.tsx"],
-        },
-      },
-    },
-    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // The property ID; the tracking code won't be generated without it

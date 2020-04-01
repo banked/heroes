@@ -23,18 +23,18 @@ export const links = [
     displayText: "Get In Touch",
     link: "contact-us",
   },
-  // {
-  //   displayText: "Deliverables",
-  //   link: "deliverables",
-  // },
-  // {
-  //   displayText: "Partners",
-  //   link: "partners",
-  // },
-  // {
-  //   displayText: "News",
-  //   link: "news",
-  // },
+  {
+    displayText: "Deliverables",
+    link: "deliverables",
+  },
+  {
+    displayText: "Partners",
+    link: "partners",
+  },
+  {
+    displayText: "News",
+    link: "news",
+  },
 ]
 
 const Header = ({ homepage = false }: { homepage?: boolean }) => {
