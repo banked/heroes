@@ -40,6 +40,10 @@ const SEO = (props: Props) => {
   const metaDescription = description || site.siteMetadata.description
   const metaTitle = title || site.siteMetadata.title
 
+  const titleString = title
+    ? `${title} | ${site.siteMetadata.title}`
+    : site.siteMetadata.title
+
   const schemaOrgJSONLD = [
     {
       "@context": "http://schema.org",
@@ -54,9 +58,7 @@ const SEO = (props: Props) => {
   return (
     <Helmet>
       <html lang={site.siteMetadata.siteLanguage} />
-      <title>
-        {title} | {site.siteMetadata.title}
-      </title>
+      <title>{titleString}</title>
       <meta name="description" content={metaDescription} />
       <meta
         name="image"
