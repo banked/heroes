@@ -1,5 +1,5 @@
 ---
-title: 82 Meals Delivered to St Bartholomew's staff - copy
+title: 82 Meals Delivered to St Bartholomew's staff
 image: ""
 priority: 0
 publishedDate: 2020-03-30T17:59:28.270Z

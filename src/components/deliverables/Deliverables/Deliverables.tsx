@@ -87,6 +87,9 @@ const videoTile = (data: Item) => (
         allowFullScreen
       ></iframe>
     </div>
+    <div className={styles.innerTile}>
+      <h6 className={styles.heading}>{data.node.frontmatter.title}</h6>
+    </div>
   </div>
 )
 
@@ -107,7 +110,7 @@ const Deliverables = () => {
 
   return (
     <div ref={ref} className={styles.container}>
-      <h1 className={styles.title}>What Have we Delivered</h1>
+      <h1 className={styles.title}>What We Have Delivered</h1>
       <h4 className={styles.byline}>
         We've been blown away by the support and enthusiasm to date, and have
         already delivered meals, and masks to hospitals, with plenty more to

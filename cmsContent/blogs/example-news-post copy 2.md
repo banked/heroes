@@ -1,5 +1,5 @@
 ---
-title: Placeholder article 6
+title: Example Article 2
 minutes: 3
 date: "2018-12-10"
 image: assets/original-20@2x.jpg
