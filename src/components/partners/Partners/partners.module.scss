@@ -5,6 +5,7 @@
   max-width: 1087px;
   width: 90%;
   margin: auto;
+  margin-bottom: 200px;
 }
 
 .content {
@@ -100,6 +101,10 @@
 }
 
 @media (max-width: 779px) {
+  .container {
+    margin: auto;
+  }
+
   .content {
     flex-wrap: wrap;
   }
