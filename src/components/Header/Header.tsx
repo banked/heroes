@@ -20,20 +20,20 @@ export const links = [
     link: "team",
   },
   {
-    displayText: "Get In Touch",
-    link: "contact-us",
+    displayText: "Partners",
+    link: "partners",
   },
   {
     displayText: "Deliverables",
     link: "deliverables",
   },
   {
-    displayText: "Partners",
-    link: "partners",
-  },
-  {
     displayText: "News",
     link: "news",
+  },
+  {
+    displayText: "Get In Touch",
+    link: "contact-us",
   },
 ]
 

@@ -10,7 +10,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO
-        title="About Us"
+        title="Team"
         description="We've come together for one reason: we love our NHS. We are doctors, musicians, technologists, students, and artists."
       />
       <BasicPage>
