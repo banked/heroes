@@ -19,10 +19,10 @@ export const links = [
     displayText: "Team",
     link: "team",
   },
-  {
-    displayText: "Partners",
-    link: "partners",
-  },
+  // {
+  //   displayText: "Partners",
+  //   link: "partners",
+  // },
   // {
   //   displayText: "Deliverables",
   //   link: "deliverables",
@@ -31,10 +31,10 @@ export const links = [
   //   displayText: "News",
   //   link: "news",
   // },
-  // {
-  //   displayText: "Get In Touch",
-  //   link: "contact-us",
-  // },
+  {
+    displayText: "Get In Touch",
+    link: "contact-us",
+  },
 ]
 
 const Header = ({ homepage = false }: { homepage?: boolean }) => {
