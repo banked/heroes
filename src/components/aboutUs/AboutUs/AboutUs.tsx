@@ -11,9 +11,7 @@ import mpimenta from "../../../images/team/mpimenta.jpg"
 import siems from "../../../images/team/siems.jpg"
 import solanki from "../../../images/team/solanki.jpg"
 import yilmaz from "../../../images/team/yilmaz.jpg"
-import Logo from "../../../images/logo.inline.svg"
-import { Link } from "gatsby"
-import Footer from "../../Footer"
+import jack from "../../../images/team/jack.jpg"
 
 const teamContent = [
   {
@@ -75,6 +73,13 @@ const teamContent = [
     position: "CEO, Catalyst AI",
     quote: `"We need great people, ideas, and technology to solve big problems. When all three come together, amazing things happen."`,
     twitterHandle: "RaymondSiems",
+  },
+  {
+    image: jack,
+    name: "Jack Chute",
+    position: "Creative Content Director",
+    quote: `Worked as a filmmaker for 15 years in commercial, music, and documentary formats."`,
+    twitterHandle: "jackchute",
   },
 ]
 

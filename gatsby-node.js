@@ -43,33 +43,33 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 }
 
-exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions
-  const result = await graphql(`
-    query {
-      allMarkdownRemark(filter: { fields: { slug: { regex: "/blogs/" } } }) {
-        edges {
-          node {
-            frontmatter {
-              title
-            }
-            fields {
-              slug
-            }
-          }
-        }
-      }
-    }
-  `)
+// exports.createPages = async ({ graphql, actions }) => {
+//   const { createPage } = actions
+//   const result = await graphql(`
+//     query {
+//       allMarkdownRemark(filter: { fields: { slug: { regex: "/blogs/" } } }) {
+//         edges {
+//           node {
+//             frontmatter {
+//               title
+//             }
+//             fields {
+//               slug
+//             }
+//           }
+//         }
+//       }
+//     }
+//   `)
 
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    const urlPath = slugify(node.frontmatter.title)
-    createPage({
-      path: `/news/${urlPath}`,
-      component: path.resolve(`./src/templates/NewsItemPage/NewsItemPage.tsx`),
-      context: {
-        slug: node.fields.slug,
-      },
-    })
-  })
-}
+//   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+//     const urlPath = slugify(node.frontmatter.title)
+//     createPage({
+//       path: `/news/${urlPath}`,
+//       component: path.resolve(`./src/templates/NewsItemPage/NewsItemPage.tsx`),
+//       context: {
+//         slug: node.fields.slug,
+//       },
+//     })
+//   })
+// }
