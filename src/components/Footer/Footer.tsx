@@ -1,13 +1,14 @@
 import React from "react"
 import GofundmeButton from "../index/shared/GofundmeButton"
 import classnames from "classnames"
+import { Link } from "gatsby"
+import { links } from "../Header/Header"
 
 import * as styles from "./footer.module.scss"
 
 import Twitter from "../../images/socialIcons/twitter.inline.svg"
 import Instagram from "../../images/socialIcons/instagram.inline.svg"
 // import Facebook from "../../images/socialIcons/facebook.inline.svg"
-import { Link } from "gatsby"
 
 const socials = [
   {
@@ -99,15 +100,11 @@ const Footer = ({
           </a>
         </div>
         <div className={styles.linkContainer}>
-          <Link to={"/team"} className={styles.footerLink}>
-            Team
-          </Link>
-          <Link to={"/ambassadors"} className={styles.footerLink}>
-            Ambassadors
-          </Link>
-          <Link to={"/contact-us"} className={styles.footerLink}>
-            Contact Us
-          </Link>
+          {links.map(link => (
+            <Link key={link.link} to={link.link} className={styles.footerLink}>
+              {link.displayText}
+            </Link>
+          ))}
         </div>
         <p className={styles.copyright}>© Heroes {new Date().getFullYear()}</p>
       </div>
