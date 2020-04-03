@@ -19,18 +19,18 @@ export const links = [
     displayText: "Team",
     link: "team",
   },
-  // {
-  //   displayText: "Partners",
-  //   link: "partners",
-  // },
-  // {
-  //   displayText: "Deliverables",
-  //   link: "deliverables",
-  // },
-  // {
-  //   displayText: "News",
-  //   link: "news",
-  // },
+  {
+    displayText: "Partners",
+    link: "partners",
+  },
+  {
+    displayText: "What We've Done",
+    link: "what-we-have-done",
+  },
+  {
+    displayText: "News",
+    link: "news",
+  },
   {
     displayText: "Get In Touch",
     link: "contact-us",
