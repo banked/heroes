@@ -12,7 +12,7 @@ HEROES was founded and is staffed by our frontline NHS workers and their familie
 * **by obtaining PPE** (certified personal protective equipment) including masks, gloves, gowns, and protective eyewear and working closely with Government and the NHSE to ensure targeted delivery
 * **by providing vital human health and well-being services**, such as accredited counselling, emergency childcare, and transport and food drops where needed
 
-The BMA, the doctors’ trade union, recently launched an online fundraising page2, BMA Giving, which will combine efforts with HEROES to fund tangible benefits for doctors and medical students working to tackle Covid-19.
+The BMA, the doctors’ trade union, recently launched an online fundraising page, BMA Giving, which will combine efforts with HEROES to fund tangible benefits for doctors and medical students working to tackle Covid-19.
 
 Through this new collaboration, donations from the public will be disbursed across charities whose aim is to support doctors on the frontline so that they can focus on providing vital treatment for patients.
 
