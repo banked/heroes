@@ -4,7 +4,7 @@ minutes: 3
 image: assets/shareimage.png
 publishedDate: 2020-04-04T13:01:50.218Z
 ---
-HEROES: Help Them Help Us1 and the British Medical Association (BMA) have announced a new partnership to protect the physical and mental wellbeing of doctors on the frontline during the Covid-19 pandemic.
+HEROES: Help Them Help Us and the British Medical Association (BMA) have announced a new partnership to protect the physical and mental wellbeing of doctors on the frontline during the Covid-19 pandemic.
 
 HEROES was founded and is staffed by our frontline NHS workers and their families, and powered by a network of generous corporations, service providers, and individuals devoted to making help easy to find, and easy to provide. The band of volunteers behind HEROES – from a range of industries – is working around the clock to build a permanent platform that will link donors, providers and our NHS staff to one another in this urgent time of need:
 
