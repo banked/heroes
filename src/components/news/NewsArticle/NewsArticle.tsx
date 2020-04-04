@@ -25,13 +25,13 @@ const NewsArticle = ({ article }: { article: Article }) => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.imageContainer}>
-        <Img
-          className={styles.image}
-          fluid={article.frontmatter.image.childImageSharp.fluid}
-        />
-      </div>
       <div className={styles.articleContainer}>
+        <div className={styles.imageContainer}>
+          <Img
+            className={styles.image}
+            fluid={article.frontmatter.image.childImageSharp.fluid}
+          />
+        </div>
         <div className={styles.articleWrapper}>
           <div className={styles.header}>
             <Socials pageLink={pageLink} />
