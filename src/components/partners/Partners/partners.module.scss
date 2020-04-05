@@ -60,6 +60,10 @@
   letter-spacing: 2px;
   text-align: center;
   color: #3b3b4d;
+
+  @media (max-width: 453px) {
+    font-size: 30px;
+  }
 }
 
 .byline {
