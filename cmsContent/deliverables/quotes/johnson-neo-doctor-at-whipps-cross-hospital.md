@@ -13,6 +13,6 @@ quote: >-
   Through this initiative I have had fresh chicken breast and some fruits sent
   to my doorstep - that is one less thing to worry about and a few more hours of
   rest for myself. Thank you so much from the bottom of my heart.
-priority: 0
+priority: 7
 publishedDate: 2020-04-05T10:40:58.479Z
 ---
