@@ -13,7 +13,7 @@ const VideoColumn = () => {
           <div className={styles.spot2}></div>
           <div className={styles.spot3}></div>
           <div className={styles.spot4}></div>
-          <div className={styles.spot5}></div>
+          {/* <div className={styles.spot5}></div> */}
           <div className={styles.spot6}></div>
           <div className={styles.video}>
             <iframe
