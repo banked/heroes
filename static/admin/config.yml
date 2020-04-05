@@ -76,3 +76,12 @@ collections:
       - { name: image, label: Image, widget: image }
       - { name: body, label: Content, widget: markdown }
       - { name: publishedDate, label: Published, widget: datetime }
+  - name: site-information
+    label: Site Information
+    files:
+      - label: "Amount Raised"
+        name: "amount-raised"
+        file: "cmsContent/siteInformation/amountRaised.yml"
+        identifier_field: amountRaised
+        fields:
+          - { name: amountRaised, label: "Amount Raised" }
