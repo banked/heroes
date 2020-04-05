@@ -20,8 +20,8 @@ export const links = [
     link: "team",
   },
   {
-    displayText: "Partners",
-    link: "partners",
+    displayText: "Collaborators",
+    link: "collaborators",
   },
   {
     displayText: "What We've Done",

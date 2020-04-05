@@ -37,7 +37,7 @@ const content = [
 const Partners = () => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>PARTNERS</h1>
+      <h1 className={styles.title}>COLLABORATORS</h1>
       <h4 className={styles.byline}>
         Our NHS frontline staff depend on the generosity of our partners. We’re
         all thankful for their substantive contributions, which are always

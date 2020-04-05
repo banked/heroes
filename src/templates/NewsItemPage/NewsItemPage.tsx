@@ -24,7 +24,7 @@ export const query = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
-        date(formatString: "D MMMM YYYY")
+        publishedDate(formatString: "D MMMM YYYY")
         title
         image {
           childImageSharp {

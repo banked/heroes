@@ -30,7 +30,7 @@ const Tiles = () => {
     query {
       allMarkdownRemark(
         filter: { fields: { slug: { regex: "/blogs/" } } }
-        sort: { fields: [frontmatter___date], order: DESC }
+        sort: { fields: [frontmatter___publishedDate], order: DESC }
       ) {
         edges {
           node {
@@ -38,7 +38,7 @@ const Tiles = () => {
             frontmatter {
               title
               minutes
-              date
+              publishedDate
               image {
                 childImageSharp {
                   fluid(maxWidth: 840) {
