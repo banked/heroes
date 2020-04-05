@@ -1,6 +1,6 @@
 ---
 title: Easter delivered to the NHS frontline
-image: assets/img-20200401-wa0017.jpg
+image: assets/img-20200401-wa0021.jpg
 priority: 0
 publishedDate: 2020-04-05T11:05:39.828Z
 ---
