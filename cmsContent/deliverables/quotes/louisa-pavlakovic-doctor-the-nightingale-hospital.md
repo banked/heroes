@@ -9,6 +9,6 @@ quote: >-
   reassuring my family I'm leaving behind a well stocked freezer.
 
   We are so grateful!
-priority: 0
+priority: 9
 publishedDate: 2020-04-05T13:37:50.512Z
 ---
