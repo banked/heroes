@@ -11,6 +11,8 @@
 .content {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .textContent {
@@ -29,7 +31,7 @@
 }
 
 .itemContainer {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   position: relative;
   margin: 0 25px;
   height: 118px;

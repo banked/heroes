@@ -2,10 +2,12 @@ import React from "react"
 
 import * as styles from "./partners.module.scss"
 
-import bma from "../../../images/partners/bma.png"
 import chilliBees from "../../../images/partners/chilli_bees.png"
 import story from "../../../images/partners/story.png"
 import williamWhite from "../../../images/partners/william_white.png"
+import selfridges from "../../../images/partners/selfridges.png"
+import baylissAndHarding from "../../../images/partners/bayliss_and_harding.png"
+import addisonLee from "../../../images/partners/addison_lee.png"
 
 const content = [
   {
@@ -27,10 +29,22 @@ const content = [
       "Before Chilli Bees closed their kitchens for lockdown, they were able to cook over 800 wholesome meals for the NHS staff at St George’s and Royal Brompton Hospitals. While their business is closed, owner Ellie and her mum will continue to cook what they can from home for the staff of St George’s.",
   },
   {
-    name: "BMA",
-    icon: bma,
+    name: "Selfridges",
+    icon: selfridges,
     description:
-      "The doctors' trade union launched an online fundraising page, BMA Giving, which will combine efforts with HEROES to direct any donations to several doctor and medical student-focused charities, where they will benefit their colleagues the most.",
+      "Londons luxury department store Selfridges made sure NHS frontline staff didnt miss out this Easter with a kind donation of 1,600 Easter eggs from their stock. We are working with Selfridges to look at on-going opportunities for support.",
+  },
+  {
+    name: "Bayliss and Harding",
+    icon: baylissAndHarding,
+    description:
+      "English sustainable luxury toilettries brand kindly donated 50 manicure sets to an NHS wellbeing centre, taking care of the helping hands taking care of our country.",
+  },
+  {
+    name: "Addison Lee",
+    icon: addisonLee,
+    description:
+      "We teamed up with Addison Lee to help deliver Easter eggs donated by Selfidges to the frontline. Addison Lee provided the cars and drivers that delivered 200 eggs to London hopstals, GP's and hospices.",
   },
 ]
 
