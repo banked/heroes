@@ -1,9 +1,7 @@
 ---
-title: 82 Meals Delivered to St Bartholomew's staff (EXAMPLE)
-image: assets/nintchdbpict-000374498249-e-1515532947295-1-.jpg
+title: 300 meals delivered to Royal Brompton Hospital staff
+image: assets/chilli-bees-food-drop_03.jpg
 priority: 10
 publishedDate: 2020-03-30T17:59:28.270Z
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et…
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+It was happy faces all round when frontline staff at Royal Brompton Hospital received 300 delicious hot meals, cooked and dropped by the Chilli Bees Catering team. In fact, the delivery was so well received, we immediately started an on-going partnership with Chilli Bees to ensure lots more drops like this could be made.

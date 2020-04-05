@@ -1,7 +1,7 @@
 ---
 title: Help Them Help Us welcomes the BMA as a new partner
 minutes: 3
-image: assets/shareimage.png
+image: assets/bma.png
 publishedDate: 2020-04-04T13:01:50.218Z
 ---
 HEROES: Help Them Help Us and the British Medical Association (BMA) have announced a new partnership to protect the physical and mental wellbeing of doctors on the frontline during the Covid-19 pandemic.
