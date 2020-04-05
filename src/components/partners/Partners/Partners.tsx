@@ -12,25 +12,25 @@ const content = [
     name: "William White",
     icon: williamWhite,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "The London butchers’ partnered with HEROES to deliver fresh ingredients, a selection of top quality meats and vegetables to the homes of NHS staff to keep their kitchens fully stocked. ",
   },
   {
     name: "Restaurant Story",
     icon: story,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "When Tom Sellers was forced to close his Michelin starred Restaurant Story due to government restrictions, he turned his efforts into preparing and delivering 50 filling lunches to Guys’ Hospital staff.",
   },
   {
     name: "Chilli Bees",
     icon: chilliBees,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Before Chilli Bees closed their kitchens for lockdown, they were able to cook over 800 wholesome meals for the NHS staff at St George’s and Royal Brompton Hospitals. While their business is closed, owner Ellie and her mum will continue to cook what they can from home for the staff of St George’s.",
   },
   {
     name: "BMA",
     icon: bma,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "The doctors' trade union launched an online fundraising page, BMA Giving, which will combine efforts with HEROES to direct any donations to several doctor and medical student-focused charities, where they will benefit their colleagues the most.",
   },
 ]
 
