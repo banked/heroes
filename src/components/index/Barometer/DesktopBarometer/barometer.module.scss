@@ -28,6 +28,10 @@
     width: 23px;
     height: 356px;
   }
+
+  @media (max-width: 779px) {
+    display: none;
+  }
 }
 
 .innerContainer {

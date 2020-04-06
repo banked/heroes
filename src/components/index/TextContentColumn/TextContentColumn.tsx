@@ -10,6 +10,7 @@ import Title from "../../../images/help_them_help_us.inline.svg"
 import gofundmeLogo from "../../../images/gofundme.svg"
 import signatures from "../../../images/signatures.svg"
 import bmaMobile from "../../../images/bma.png"
+import Barometer from "../Barometer/MobileBarometer"
 
 const TextContentColumn = () => {
   return (
@@ -106,6 +107,7 @@ const TextContentColumn = () => {
         <div className={styles.signatures}>
           <img src={signatures} alt="" />
         </div>
+        <Barometer />
         <a
           href="https://www.bma.org.uk/"
           target="_blank"

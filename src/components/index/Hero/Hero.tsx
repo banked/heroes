@@ -2,7 +2,7 @@ import React from "react"
 import * as styles from "./hero.module.scss"
 import VideoColumn from "../VideoColumn"
 import TextContentColumn from "../TextContentColumn"
-import Barometer from "../Barometer"
+import Barometer from "../Barometer/DesktopBarometer"
 
 const Hero = () => {
   return (

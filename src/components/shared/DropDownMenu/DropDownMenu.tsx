@@ -31,7 +31,11 @@ const DropDownMenu = () => {
         </span>
         <div className={styles.headerLinks}>
           {links.map(link => (
-            <Link key={link.link} className={styles.headerLink} to={link.link}>
+            <Link
+              key={link.link}
+              className={styles.headerLink}
+              to={`/${link.link}`}
+            >
               {link.displayText}
             </Link>
           ))}
