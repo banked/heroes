@@ -69,6 +69,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-transformer-yaml`,
     // {
     //   resolve: `gatsby-plugin-manifest`,
     //   options: {

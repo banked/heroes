@@ -101,7 +101,11 @@ const Footer = ({
         </div>
         <div className={styles.linkContainer}>
           {links.map(link => (
-            <Link key={link.link} to={link.link} className={styles.footerLink}>
+            <Link
+              key={link.link}
+              to={`/${link.link}`}
+              className={styles.footerLink}
+            >
               {link.displayText}
             </Link>
           ))}

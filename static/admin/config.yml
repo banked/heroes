@@ -76,3 +76,14 @@ collections:
       - { name: image, label: Image, widget: image }
       - { name: body, label: Content, widget: markdown }
       - { name: publishedDate, label: Published, widget: datetime }
+  - name: site-information
+    label: Site Information
+    files:
+      - label: "Barometer"
+        name: "barometer"
+        file: "cmsContent/siteInformation/barometer.yml"
+        identifier_field: target
+        fields:
+          - { name: amountRaised, label: "Amount Raised" }
+          - { name: description, label: "Description" }
+          - { name: target, label: "target" }
