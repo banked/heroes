@@ -79,9 +79,11 @@ collections:
   - name: site-information
     label: Site Information
     files:
-      - label: "Amount Raised"
-        name: "amount-raised"
-        file: "cmsContent/siteInformation/amountRaised.yml"
-        identifier_field: amountRaised
+      - label: "Barometer"
+        name: "barometer"
+        file: "cmsContent/siteInformation/barometer.yml"
+        identifier_field: target
         fields:
           - { name: amountRaised, label: "Amount Raised" }
+          - { name: description, label: "Description" }
+          - { name: target, label: "target" }

@@ -8,13 +8,16 @@ const itemsQuery = () =>
     query {
       siteInformationYaml {
         amountRaised
+        target
+        description
       }
     }
   `)
 
 const Barometer = () => {
-  const amountRaised = itemsQuery().siteInformationYaml.amountRaised
-  const target = 1000000
+  const data = itemsQuery()
+  const amountRaised = data.siteInformationYaml.amountRaised
+  const target = data.siteInformationYaml.target
   const barometerMaxHeight = 284
 
   const [displayValue, setDisplayValue] = useState<number>(amountRaised)
@@ -82,10 +85,19 @@ const Barometer = () => {
               .format(displayValue)
               .replace(/\.00/g, "")}
           </h6>
-          <p className={styles.target}>raised of £1,000,000 target</p>
+          <p className={styles.target}>
+            raised of{" "}
+            {new Intl.NumberFormat("en-GB", {
+              style: "currency",
+              currency: "GBP",
+              maximumFractionDigits: 2,
+            })
+              .format(target)
+              .replace(/\.00/g, "")}{" "}
+            target
+          </p>
           <p className={styles.description}>
-            This is a total of the Gofundme money raised and direct money
-            donated to the foundation.
+            {data.siteInformationYaml.description}
           </p>
         </div>
       </div>
