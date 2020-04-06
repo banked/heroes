@@ -8,17 +8,17 @@ import * as styles from "./footer.module.scss"
 
 import Twitter from "../../images/socialIcons/twitter.inline.svg"
 import Instagram from "../../images/socialIcons/instagram.inline.svg"
-// import Facebook from "../../images/socialIcons/facebook.inline.svg"
+import Facebook from "../../images/socialIcons/facebook.inline.svg"
 
 const socials = [
   {
     icon: Twitter,
     link: "https://twitter.com/HelpThemHelpUs_",
   },
-  // {
-  //   icon: Facebook,
-  //   link: "#",
-  // },
+  {
+    icon: Facebook,
+    link: "https://www.facebook.com/heroeshelpthemhelpus",
+  },
   {
     icon: Instagram,
     link: "https://instagram.com/helpthemhelpus_",
