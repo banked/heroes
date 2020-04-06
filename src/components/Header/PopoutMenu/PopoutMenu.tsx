@@ -97,6 +97,14 @@ class PopoutMenuComponent extends React.Component<Props, State> {
                   {link.displayText}
                 </Link>
               ))}
+              <a
+                className={styles.link}
+                href="https://www.gofundme.com/f/help-them-help-us"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <b>DONATE</b>
+              </a>
             </div>
           </div>
         </div>

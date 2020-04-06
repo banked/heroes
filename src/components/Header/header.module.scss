@@ -76,6 +76,11 @@
     height: 42px;
     padding-top: 10px;
     padding-bottom: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
   }
 
   .popoutContainer {
@@ -111,12 +116,5 @@
 
   .removePadding {
     display: flex;
-    .popoutContainer {
-      padding-right: 0px;
-    }
-
-    .logoLink {
-      padding-left: 0px;
-    }
   }
 }
