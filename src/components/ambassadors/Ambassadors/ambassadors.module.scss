@@ -1,7 +1,7 @@
 @import "../../../scss/constants.scss";
 
 .container {
-  max-width: 830px;
+  max-width: 1086px;
   width: 90%;
   margin: auto;
   padding-top: 56px;
@@ -11,8 +11,18 @@
   }
 }
 
+.itemContainer {
+  width: 45%;
+}
+
 .mainImage {
   width: 100%;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .contentContainer {
@@ -54,13 +64,13 @@
 }
 
 .instagramLink {
-  position: absolute;
-  top: 0;
-  right: 0;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 
 .name {
-  font-size: 18px;
+  font-size: 32px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -73,14 +83,14 @@
 
 .position {
   opacity: 0.8;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
+  line-height: 1.47;
   letter-spacing: normal;
   color: #3b3b4d;
-  margin: 0;
+  margin: 10px auto;
 }
 
 .biography {
@@ -105,4 +115,28 @@
   color: #1d2433;
   margin: 0;
   margin-right: 20px;
+}
+
+.instagramText {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #3b3b4d;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+@media (max-width: 779px) {
+  .contentWrapper {
+    justify-content: center;
+  }
+
+  .itemContainer {
+    width: 100%;
+    max-width: 490px;
+  }
 }
