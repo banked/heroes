@@ -9,6 +9,7 @@ import * as styles from "./footer.module.scss"
 import Twitter from "../../images/socialIcons/twitter.inline.svg"
 import Instagram from "../../images/socialIcons/instagram.inline.svg"
 import Facebook from "../../images/socialIcons/facebook.inline.svg"
+import LinkedIn from "../../images/socialIcons/linkedin.inline.svg"
 
 const socials = [
   {
@@ -22,6 +23,10 @@ const socials = [
   {
     icon: Instagram,
     link: "https://instagram.com/helpthemhelpus_",
+  },
+  {
+    icon: LinkedIn,
+    link: "http://www.linkedin.com/company/helpthemhelpus/",
   },
 ]
 
