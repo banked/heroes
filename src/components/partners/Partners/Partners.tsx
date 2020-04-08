@@ -8,6 +8,9 @@ import williamWhite from "../../../images/partners/william_white.png"
 import selfridges from "../../../images/partners/selfridges.png"
 import baylissAndHarding from "../../../images/partners/bayliss_and_harding.png"
 import addisonLee from "../../../images/partners/addison_lee.png"
+import esteeLauder from "../../../images/partners/estee_lauder.png"
+import flavourManagement from "../../../images/partners/flavour_management.png"
+import contractorsAppeal from "../../../images/partners/contractors_appeal.png"
 
 const content = [
   {
@@ -45,6 +48,24 @@ const content = [
     icon: addisonLee,
     description:
       "We teamed up with Addison Lee to help deliver Easter eggs donated by Selfidges to the frontline. Addison Lee provided the cars and drivers that delivered 200 eggs to London hopstals, GP's and hospices.",
+  },
+  {
+    name: "Estee Lauder",
+    icon: esteeLauder,
+    description:
+      "We were approached by Estee Lauder for help delivering 500 medical masks to NHS staff in need. Once received, we distributed the masks to various hospices and GP surgeries around the UK.",
+  },
+  {
+    name: "Flavour Management",
+    icon: flavourManagement,
+    description:
+      "The team at Flavour Management represent some of the best chefs in the UK. They've been crucial in the organisation and delivery of freshly prepared, hot meals to hospitals all over the country, including pizzas cooked by Aldo Zilli and paella made by Omar Allibhoy. We're pleased to continue our partnership, to feed more NHS staff.",
+  },
+  {
+    name: "Contractors Appeal",
+    icon: contractorsAppeal,
+    description:
+      "Set up to source and purchase PPE from the UK construction sector before distributing it to NHS staff, care workers and vulnerable groups – Contractors Appeal is our on-going partner for protecting those in need.",
   },
 ]
 

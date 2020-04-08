@@ -29,6 +29,8 @@
   position: relative;
   margin-top: 20px;
   margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
 }
 
 .donateContainer {
@@ -63,10 +65,11 @@
   margin-bottom: 53px;
 }
 
-.instagramLink {
-  display: flex;
+.socialLink {
+  display: inline-flex;
   align-items: center;
   text-decoration: none;
+  margin-bottom: 8px;
 }
 
 .name {
@@ -90,7 +93,7 @@
   line-height: 1.47;
   letter-spacing: normal;
   color: #3b3b4d;
-  margin: 10px auto;
+  margin: 10px 0;
 }
 
 .biography {
@@ -117,7 +120,7 @@
   margin-right: 20px;
 }
 
-.instagramText {
+.socialText {
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
