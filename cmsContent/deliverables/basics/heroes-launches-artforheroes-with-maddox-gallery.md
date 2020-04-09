@@ -1,7 +1,7 @@
 ---
 title: 'HEROES launches #ArtforHEROES with Maddox Gallery'
 image: assets/artforheroes-post.jpg
-priority: 11
+priority: 12
 publishedDate: 2020-04-09T17:32:42.710Z
 ---
 We've partnered with Maddox Gallery to launch Art for HEROES. Thirty fantastic artists have donated their work to support NHS frontline staff, with all proceeds from every piece sold going to HEROES. Buyers were quick – this beautiful piece sold in just a matter of hours!
