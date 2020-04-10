@@ -35,6 +35,7 @@ collections:
           widget: string,
           hint: "Copy the #ID from the end of the link and paste here. (eg. 399659174)",
         }
+      - { name: body, label: Content, widget: markdown, required: false }
       - {
           name: priority,
           label: Priority,

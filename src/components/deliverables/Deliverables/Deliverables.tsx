@@ -89,6 +89,12 @@ const videoTile = (data: Item) => (
     </div>
     <div className={styles.innerTile}>
       <h6 className={styles.heading}>{data.node.frontmatter.title}</h6>
+      {data.node.html && (
+        <div
+          className={styles.content}
+          dangerouslySetInnerHTML={{ __html: data.node.html }}
+        ></div>
+      )}
     </div>
   </div>
 )
