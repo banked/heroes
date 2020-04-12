@@ -1,6 +1,6 @@
 ---
 title: NHS HEROES Week 2 Update
 videoLink: '406206380'
-priority: 25
+priority: 14
 publishedDate: 2020-04-10T13:45:08.440Z
 ---
