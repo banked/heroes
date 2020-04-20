@@ -1,0 +1,21 @@
+.wrapper {
+  background: #F9FAFF;
+  border-radius: 12px;
+}
+
+.logo, .wrapper {
+  display: block;
+  margin: 0 auto;
+  padding: 15px;
+  width: 437px;
+}
+
+.logo {
+  height: 15px;
+  padding: 30px 0;
+}
+
+.background {
+  background: linear-gradient(to bottom, #1774F7 465px, #F9FAFF 465px);
+  background-attachment: fixed;
+}
