@@ -1,7 +1,29 @@
 .button {
-    background: blue;
+    background: #98989C;
     display: inline-block;
-    margin: 10px;
+    margin: 15px;
     padding: 5px;
     color: white;
+    border-radius: 5px;
+    height: 50px;
+    width: 125px;
+}
+
+.custom {
+    margin: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    background: #98989C;
+    span {
+        font-size: 17px;
+        color: #FFFFFF;
+        padding: 0 20px 0 10px;
+    }
+    input {
+        padding: 20px;
+        background: #F9FAFF;
+        border: 1px solid rgba(29, 36, 51, 0.2);
+        border-radius: 4px;
+        // width: 100%;
+    }
 }
