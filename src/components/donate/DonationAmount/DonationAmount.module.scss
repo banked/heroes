@@ -14,23 +14,40 @@
     height: 50px;
     width: calc(100%/3 - 16px);
     border: 0;
+    transition: background 0.5s ease;
+}
+
+.selected {
+    background: #5045FE;
+    outline: none;
 }
 
 .custom {
+    display: flex;
     margin: 8px;
     padding: 10px;
     border-radius: 6px;
     background: #98989C;
+    transition: background 0.5s ease;
     span {
+        align-self: center;
         font-size: 17px;
         color: #FFFFFF;
         padding: 0 20px 0 10px;
     }
     input {
+        width: 100%;
         padding: 20px;
         background: #F9FAFF;
         border: 1px solid rgba(29, 36, 51, 0.2);
         border-radius: 4px;
         // width: 100%;
+        &:focus ~ .custom {
+            background: #5045FE; 
+        }    
     }
+    &.custom_selected {
+        background: #5045FE;
+    }
+    
 }
