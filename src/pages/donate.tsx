@@ -2,19 +2,18 @@ import React from "react"
 // import { Link } from "gatsby"
 
 import Layout from "../components/Layout"
-import DontationAmount from "../components/donate/DonationAmount"
+import Donate from "../components/donate/Donate"
+import { renderStatic } from "react-helmet"
 
 
 const DonatePage = () => {
-  return (
-    <Layout>
-      <h2>How much would you like to donate?</h2>
-        <DontationAmount/>
-      <h2>Enter your details</h2>
 
-      <h2>How would you like to pay?</h2>
-    </Layout>
-  )
+    return (
+      <Layout>
+        <Donate/>
+      </Layout>
+    )
+  
 }
 
 export default DonatePage
