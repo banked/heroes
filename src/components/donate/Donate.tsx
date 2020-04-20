@@ -3,6 +3,7 @@ import React from "react"
 
 import DonationAmount from "./DonationAmount"
 import DonationDetails from "./DonationDetails"
+import "./Donate.scss"
 
 class Donate extends React.Component<Props, State> {
 
@@ -25,7 +26,7 @@ class Donate extends React.Component<Props, State> {
         name, email
       } = this.state;
     return (
-      <div>
+      <div className="container">
         <h2>How much would you like to donate?</h2>
           <DonationAmount onChange={this.handleChangeAmount} />
         <h2>Enter your details</h2>

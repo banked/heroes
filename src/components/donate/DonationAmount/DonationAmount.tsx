@@ -26,7 +26,8 @@ class DonationAmount extends React.Component<Props, State> {
       return (
         <div>
           {DONATION_AMOUNTS.map((object, i) => <button onClick={this.handleAmountChange} data-amount={object} className={styles.button} key={i}>{object}</button>)}
-          <div>
+          <div className={styles.custom}>
+            <span>£</span>
             <input
               type="number"
               value={this.state.customAmount > 0 ? this.state.customAmount : ''}
