@@ -1,0 +1,26 @@
+.button {
+  display: block;
+  padding: 20px 40px;
+  border-radius: 6px;
+  box-shadow: 0 8px 0 0 #C6C6C8;
+  background-color: #98989C;
+  border: 0;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.94px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 42px;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+.buttonEnabled {
+  box-shadow: 0 8px 0 0 #009F57;
+  background-color: #01B965;
+}
