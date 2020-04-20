@@ -6,7 +6,7 @@ import * as styles from "./DonationAmount.module.scss"
 const DONATION_AMOUNTS = [5,10,20,50,100,250]
 
 class DonationAmount extends React.Component<Props, State> {
- 
+
   state = {
     amount: 0
   }
@@ -24,8 +24,8 @@ class DonationAmount extends React.Component<Props, State> {
 
     render() {
       return (
-        <div>
-          {DONATION_AMOUNTS.map((object, i) => <button onClick={this.handleAmountChange} data-amount={object} className={styles.button} key={i}>{object}</button>)}
+        <div className={styles.buttons}>
+          {DONATION_AMOUNTS.map((object, i) => <button onClick={this.handleAmountChange} data-amount={object} className={styles.button} key={i}>£{object}</button>)}
           <div className={styles.custom}>
             <span>£</span>
             <input
@@ -39,6 +39,6 @@ class DonationAmount extends React.Component<Props, State> {
       )
     }
   }
-  
+
 
   export default DonationAmount

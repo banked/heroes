@@ -11,7 +11,7 @@ class Donate extends React.Component<Props, State> {
     name: '',
     email: ''
   }
-  
+
   handleChangeAmount = (amount) => {
     console.log(amount)
     this.setState({ amount });
@@ -29,10 +29,15 @@ class Donate extends React.Component<Props, State> {
       <div className="container">
         <h2>How much would you like to donate?</h2>
           <DonationAmount onChange={this.handleChangeAmount} />
+
         <h2>Enter your details</h2>
           <DonationDetails name={name} email={email} onChange={this.handleChangeDetails} />
+          
         <h2>How would you like to pay?</h2>
-        </div>
+        <p>Select a payment method to make your donation securely.</p>
+
+        <p>If you are making a large donation - please consider using ‘Bank Account’ to reduce our fees </p>
+      </div>
     )
   }
 }
