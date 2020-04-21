@@ -1,6 +1,7 @@
 import React from "react"
 import GofundmeButton from "../shared/GofundmeButton"
 import DropDownMenu from "../../shared/DropDownMenu"
+import { Link } from "gatsby"
 
 import * as styles from "./videoColumn.module.scss"
 
@@ -32,14 +33,7 @@ const VideoColumn = () => {
       </div>
       <div className={styles.rightColumn}>
         <div className={styles.headerLinks}>
-          <a
-            className={styles.donate}
-            href="https://www.gofundme.com/f/help-them-help-us"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Donate Now
-          </a>
+          <Link className={styles.donate} to="/donate">Donate Now</Link>
           <GofundmeButton />
         </div>
         {/* <a
