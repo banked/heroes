@@ -13,7 +13,8 @@ class Donate extends React.Component<Props, State> {
     name: '',
     email: '',
     termsAndConditions: false,
-    amount: 0
+    amount: 0,
+    loading: false
   }
 
   handleChangeAmount = (amount: number) => {
@@ -29,8 +30,12 @@ class Donate extends React.Component<Props, State> {
   }
 
   handleBankedPayment = () => {
-    const { name, email, termsAndConditions, amount } = this.state
+    if(!this.isValid() || this.state.loading) {
+      return;
+    }
 
+    const { name, email, termsAndConditions, amount } = this.state
+    this.setState({ loading: true })
     fetch("https://europe-west2-banked-heroes-dev.cloudfunctions.net/createBankedPaymentRequest", {
       accept: 'application/json',
       method: 'POST',
@@ -47,6 +52,9 @@ class Donate extends React.Component<Props, State> {
     .then((response) => response.json())
     .then((response) => {
       window.location.href = response.url;
+    })
+    .catch(() => {
+      this.setState({ loading: false })
     })
   }
 
@@ -70,7 +78,9 @@ class Donate extends React.Component<Props, State> {
         <p>If you are making a large donation - please consider using ‘Bank Account’ to reduce our fees </p>
 
         {/* <button className={buttonClassNames}>Pay by card</button> */}
-        <button onClick={this.handleBankedPayment} className={buttonClassNames}>Pay by bank account</button>
+        <button onClick={this.handleBankedPayment} className={buttonClassNames}>
+          { this.state.loading ? "Loading..." : "Pay by bank account" }
+        </button>
       </div>
     )
   }
