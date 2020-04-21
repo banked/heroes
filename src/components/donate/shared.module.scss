@@ -24,3 +24,16 @@
   box-shadow: 0 8px 0 0 #009F57;
   background-color: #01B965;
 }
+
+.social {
+  margin-top: 30px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+
+  path {
+    fill: #3b3b4d;
+    opacity: 0.5;
+  }
+}
+
