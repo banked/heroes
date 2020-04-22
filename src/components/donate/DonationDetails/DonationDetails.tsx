@@ -2,7 +2,17 @@ import React from "react"
 
 import * as styles from "./DonationDetails.module.scss"
 
-class DonationDetails extends React.Component<Props, State> {
+interface Props {
+  onChange: (details: DonationDetailsState) => void
+}
+
+export interface DonationDetailsState {
+  name: string;
+  email: string;
+  termsAndConditions: boolean;
+}
+
+class DonationDetails extends React.Component<Props, DonationDetailsState> {
 
   state = {
     name: '',
@@ -10,26 +20,22 @@ class DonationDetails extends React.Component<Props, State> {
     termsAndConditions: false
   }
 
-  handleNameChange = (e: Event) => {
-    this.setState({ name: e.target.value });
+  handleNameChange = (e: React.FormEvent<HTMLInputElement>):void => {
+    this.setState({ name: e.currentTarget.value });
   };
 
-  handleEmailChange = (e: Event) => {
-    this.setState({ email: e.target.value });
+  handleEmailChange = (e: React.FormEvent<HTMLInputElement>):void => {
+    this.setState({ email: e.currentTarget.value });
   };
 
-  handleTermsAndConditionsChange = (e: Event) => {
-    this.setState({ termsAndConditions: e.target.checked });
+  handleTermsAndConditionsChange = (e: React.FormEvent<HTMLInputElement>):void => {
+    this.setState({ termsAndConditions: e.currentTarget.checked });
   };
 
-
-  componentDidUpdate(prevProps, prevState) {
-    if(prevState.name != this.state.name || prevState.email != this.state.email || prevState.termsAndConditions != this.state.termsAndConditions) {
-      this.props.onChange({
-        name: this.state.name,
-        email: this.state.email,
-        termsAndConditions: this.state.termsAndConditions
-      });
+  componentDidUpdate(_: any, prevState:DonationDetailsState) {
+    const { name, email, termsAndConditions } = this.state;
+    if(prevState.name != name || prevState.email != email || prevState.termsAndConditions != termsAndConditions) {
+      this.props.onChange({ name, email, termsAndConditions });
     }
   }
 
@@ -44,7 +50,6 @@ class DonationDetails extends React.Component<Props, State> {
             <label className={styles.inputLabel} htmlFor="payment_session_user_name">Full Name</label>
             <input
               required
-              ref={this.nameInput}
               className={styles.input}
               type="text"
               placeholder="Enter your full name"
@@ -58,7 +63,6 @@ class DonationDetails extends React.Component<Props, State> {
             <label className={styles.inputLabel} htmlFor="payment_session_email">Email Address</label>
             <input
               required
-              ref={this.emailInput}
               className={styles.input}
               type="email"
               placeholder="Enter your email address"
@@ -73,10 +77,9 @@ class DonationDetails extends React.Component<Props, State> {
             <label htmlFor="payment_session_terms_and_conditions">
             <input
               required
-              ref={this.termsAndConditions}
               type="checkbox"
               onChange={this.handleTermsAndConditionsChange}
-              value={termsAndConditions}
+              checked={termsAndConditions}
               id="payment_session_terms_and_conditions"
             />
             I have read and accept the <a href="#">terms &amp; conditions</a>

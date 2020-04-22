@@ -2,97 +2,79 @@ import React from "react"
 // import { Link } from "gatsby"
 
 import DonationAmount from "./DonationAmount"
-import DonationDetails from "./DonationDetails"
+import DonationDetails, { DonationDetailsState }  from "./DonationDetails"
+
 import * as sharedStyles from "./shared.module.scss"
 import "./Donate.scss"
 import classNames from 'classnames';
 import {loadStripe} from '@stripe/stripe-js';
 
-class Donate extends React.Component<Props, State> {
+import { ProviderType, makePaymentRequest } from './api';
 
+
+interface DonateState {
+  name: string;
+  email: string;
+  termsAndConditions: boolean;
+  amount: number;
+  loading: any
+}
+
+class Donate extends React.Component<{}, DonateState> {
   state = {
     name: '',
     email: '',
     termsAndConditions: false,
     amount: 0,
-    loading: false
+    loading: null
   }
+  stripe: any
+  
 
 
-  async componentDidMount() {
+  async componentDidMount():Promise<void> {
     this.stripe = await loadStripe('pk_test_Yh98EHayrmthPaB6UmyCH5dv')
   }
 
-  handleChangeAmount = (amount: number) => {
+  handleChangeAmount = (amount: number):void => {
     this.setState({ amount });
   }
 
-  handleChangeDetails = ({ name, email, termsAndConditions }) => {
-    this.setState({ name: name, email: email, termsAndConditions: termsAndConditions });
+  handleChangeDetails = (details: DonationDetailsState):void => {
+    this.setState(details);
   }
 
-  isValid = () => {
-    return (this.state.amount > 0) && this.state.name && this.state.email && this.state.termsAndConditions
+  isValid = ():boolean => {
+    return ((this.state.amount > 0) && this.state.name && this.state.email && this.state.termsAndConditions) || false
   }
 
-  handleBankedPayment = () => {
+  handlePayment = (provider: ProviderType) => {
     if(!this.isValid() || this.state.loading) {
       return;
     }
 
-    const { name, email, termsAndConditions, amount } = this.state
-    this.setState({ loading: true })
-    fetch("https://europe-west2-banked-heroes-dev.cloudfunctions.net/createBankedPaymentRequest", {
-      accept: 'application/json',
-      method: 'POST',
-      mode: 'cors',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        amount: amount * 100,
-        payerName: name,
-        payerEmail: email,
-      }),
-    })
-    .then((response) => response.json())
-    .then((response) => {
-      window.location.href = response.url;
+    const { name, email, amount } = this.state
+    this.setState({ loading: provider })
+
+    makePaymentRequest({ provider, name, email, amount }).then((response) => {
+      switch (provider) {
+      case 'banked':
+        window.location.href = response.url;
+      case 'stripe':
+        this.stripe.redirectToCheckout(response.sessionId)
+      }
     })
     .catch(() => {
-      this.setState({ loading: false })
+      this.setState({ loading: null })
     })
   }
 
-  handleStripePayment = () => {
-    if(!this.isValid() || this.state.loading) {
-      return;
-    }
+  handleBankedPayment = ():void => {
+    this.handlePayment('banked')
+  }
 
-    const { name, email, termsAndConditions, amount } = this.state
-    this.setState({ loading: true })
-    fetch("https://europe-west2-banked-heroes-dev.cloudfunctions.net/createStripePaymentRequest", {
-      accept: 'application/json',
-      method: 'POST',
-      mode: 'cors',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        amount: amount * 100,
-        payerName: name,
-        payerEmail: email,
-      }),
-    })
-    .then((response) => response.json())
-    .then(({ sessionId }) => {
-      console.log("HI", sessionId)
-      this.stripe.redirectToCheckout({ sessionId })
-    })
-    .catch((e) => {
-      console.log(e)
-      this.setState({ loading: false })
-    })
+  handleStripePayment = ():void => {
+    this.handlePayment('stripe')
   }
 
   render() {
@@ -115,9 +97,11 @@ class Donate extends React.Component<Props, State> {
 
         <p>If you are making a large donation - please consider using ‘Bank Account’ to reduce our fees </p>
 
-        <button onClick={this.handleStripePayment} className={buttonClassNames}>Pay by card</button>
+        <button onClick={this.handleStripePayment} className={buttonClassNames}>
+          { this.state.loading == 'stripe' ? "Loading..." : "Pay by card" }
+        </button>
         <button onClick={this.handleBankedPayment} className={buttonClassNames}>
-          { this.state.loading ? "Loading..." : "Pay by bank account" }
+          { this.state.loading == 'banked' ? "Loading..." : "Pay by bank account" }
         </button>
       </div>
     )
