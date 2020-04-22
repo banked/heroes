@@ -17,8 +17,13 @@
   margin-bottom: 42px;
   cursor: pointer;
   width: 100%;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
+.layout {
+  text-align: center;
+}
 
 .buttonEnabled {
   box-shadow: 0 8px 0 0 #009F57;
@@ -36,4 +41,12 @@
     opacity: 0.5;
   }
 }
+
+.social:hover {
+  path{ 
+    fill: #5045FE;
+    opacity: 1;
+  }
+}
+
 
