@@ -9,8 +9,8 @@ const layout = ({ children }: { children: React.ReactNode }) => {
     <Layout>
       <div className={styles.background}>
 
-      <Link to="/">
-        <Logo className={styles.logo}/>
+      <Link className={styles.logo} to="/">
+        <Logo/>
       </Link>
       <div className={styles.wrapper}>
         {children}
