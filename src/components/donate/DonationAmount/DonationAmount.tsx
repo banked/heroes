@@ -6,30 +6,39 @@ import * as styles from "./DonationAmount.module.scss"
 
 const DONATION_AMOUNTS = [5,10,20,50,100,250]
 
+interface Props {
+  onChange: (amount: number) => void
+}
+
+interface State {
+  amount: number,
+  customAmount: number | undefined
+}
+
 class DonationAmount extends React.Component<Props, State> {
 
   state = {
     amount: 0,
-    customAmount: null
+    customAmount: undefined
   }
 
-  handleAmountChange = (e: Event) => {
-    const amount = parseInt(e.target.dataset['amount'])
-    this.setState({customAmount: null, amount: amount})
-    this.props.onChange(amount)
+  handleAmountChange = (e: React.SyntheticEvent<HTMLButtonElement>) => {
+    const presetAmount = parseInt(e.currentTarget.dataset['amount'] || '')
+    this.setState({customAmount: undefined, amount: presetAmount})
+    this.props.onChange(presetAmount)
   };
 
-  handleCustomAmountChange = (e: Event) => {
-    const amount = e.target.value
-    this.setState({amount: 0, customAmount: amount})
-    this.props.onChange(amount)
+  handleCustomAmountChange = (e: React.FormEvent<HTMLInputElement>) => {
+    const customAmount = parseFloat(e.currentTarget.value)
+    this.setState({ amount: 0, customAmount })
+    this.props.onChange(customAmount)
   };
 
   initCustomAmount = () => {
-    this.setState({amount: 0, customAmount: 0})
+    this.setState({ amount: 0, customAmount: 0 })
   }
 
-  renderButton = (amount: number, i) => {
+  renderButton = (amount: number, i: number) => {
     const buttonClassNames = classNames({
       [styles.button]: true,
       [styles.selected]: (amount === this.state.amount)
@@ -38,10 +47,10 @@ class DonationAmount extends React.Component<Props, State> {
     return <button onClick={this.handleAmountChange} data-amount={amount} className={buttonClassNames} key={i}>£{amount}</button>
   }
 
-  renderCustomAmount = (customAmount: number) => {
+  renderCustomAmount = (customAmount: number | undefined) => {
     const divClassNames = classNames({
       [styles.custom]: true,
-      [styles.custom_selected]: (customAmount !== null)
+      [styles.custom_selected]: (customAmount !== undefined)
     })
 
     return (<div className={divClassNames}>
