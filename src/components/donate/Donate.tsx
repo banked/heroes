@@ -27,14 +27,7 @@ class Donate extends React.Component<{}, DonateState> {
     termsAndConditions: false,
     amount: 0,
     loading: null
-  }
-  stripe: any
-  
-
-
-  async componentDidMount():Promise<void> {
-    this.stripe = await loadStripe('pk_test_Yh98EHayrmthPaB6UmyCH5dv')
-  }
+  }  
 
   handleChangeAmount = (amount: number):void => {
     this.setState({ amount });
@@ -49,22 +42,27 @@ class Donate extends React.Component<{}, DonateState> {
   }
 
   handlePayment = (provider: ProviderType) => {
-    if(!this.isValid() || this.state.loading) {
+    if(!this.isValid() || this.state.loading !== null) {
       return;
     }
 
     const { name, email, amount } = this.state
+
     this.setState({ loading: provider })
 
-    makePaymentRequest({ provider, name, email, amount }).then((response) => {
+    makePaymentRequest({ provider, name, email, amount })
+    .then((response) => {
       switch (provider) {
       case 'banked':
         window.location.href = response.url;
       case 'stripe':
-        this.stripe.redirectToCheckout(response.sessionId)
+        loadStripe('pk_test_Yh98EHayrmthPaB6UmyCH5dv').then((stripe: any) => {
+          stripe.redirectToCheckout({ sessionId: response.sessionId })
+        })
       }
     })
-    .catch(() => {
+    .catch((e) => {
+      alert("Payment failed, please try again")
       this.setState({ loading: null })
     })
   }
