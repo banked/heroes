@@ -6,6 +6,7 @@ import joeCole from "../../../images/ambassadors/joe_cole.jpg"
 import carlyCole from "../../../images/ambassadors/carly_cole.jpg"
 import tamara from "../../../images/ambassadors/tamara.jpg"
 import jay from "../../../images/ambassadors/jay.jpg"
+import samCurran from "../../../images/ambassadors/sam_curran.jpg"
 import instagram from "../../../images/socialIcons/instagram_color.png"
 import instagramVerified from "../../../images/socialIcons/instagram_verified.png"
 import twitter from "../../../images/socialIcons/twitter_color.png"
@@ -61,6 +62,14 @@ const content = [
     ),
     instagram: "jayrutland",
     image: jay,
+  },
+  {
+    name: "Sam Curran",
+    title: "Professional England Cricketer and ambassador for HEROES",
+    bio: `Sam Curran is a professional cricketer who plays for England and Surrey CCC. Sam was voted 2019 Wisden Cricketer of the Year after a successful 2018 where he was Player of the Series against India; awarded a central contract by the ECB at the age of 20 and became the highest auctioned overseas IPL player for the 2019 season. Sam has more recently been selected by the Chennai Super Kings for the postponed IPL 2020. Working with charitable organisations and fundraisers is something close to Sam’s heart. Together with his brother Tom, they are the first cricketers to have a partnership with Great Ormond Street displaying their brand on the back of their bats. During this difficult time, Sam has been hugely proud to be part of the amazing charity HEROES, 'Help Them Help Us' and he is committed to helping the on-going Covid19 situation and wants to thank all the people who have made kind donations already.`,
+    instagram: "samcurran58",
+    twitter: "CurranSM",
+    image: samCurran,
   },
 ]
 
