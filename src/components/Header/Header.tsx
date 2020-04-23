@@ -1,19 +1,16 @@
 import React from "react"
 import { Link } from "gatsby"
 import classnames from "classnames"
-import GofundmeButton from "../index/shared/GofundmeButton"
 import PopoutMenu from "./PopoutMenu"
-import DropDownMenu from "../shared/DropDownMenu"
 
 import * as styles from "./header.module.scss"
 
 import Logo from "../../images/logo.inline.svg"
-import LogoSmall from "../../images/logoSmall.inline.svg"
 
 export const links = [
   {
-    displayText: "Ambassadors",
-    link: "ambassadors",
+    displayText: "Partners",
+    link: "partners",
   },
   {
     displayText: "Team",
@@ -23,10 +20,10 @@ export const links = [
     displayText: "Collaborators",
     link: "collaborators",
   },
-  {
-    displayText: "What We've Done",
-    link: "what-we-have-done",
-  },
+  // {
+  //   displayText: "What We've Done",
+  //   link: "what-we-have-done",
+  // },
   {
     displayText: "News",
     link: "news",
@@ -50,20 +47,19 @@ const Header = ({ homepage = false }: { homepage?: boolean }) => {
           <div className={styles.logoLarge}>
             <Logo />
           </div>
-          <div className={styles.logoSmall}>
-            <LogoSmall />
-          </div>
         </Link>
         <div className={styles.links}>
-          <div className={styles.dropdownContainer}>
-            <DropDownMenu />
-          </div>
-          <span className={styles.donateText}>Donate Now</span>
-          <GofundmeButton />
+          {links.map(link => (
+            <Link className={styles.link} to={link.link} key={link.link}>
+              {link.displayText}
+            </Link>
+          ))}
+          <button className={styles.nhsButton}>NHS Workers</button>
+          <button className={styles.donateButton}>Donate</button>
         </div>
-      </div>
-      <div className={styles.popoutContainer}>
-        <PopoutMenu links={links} />
+        <div className={styles.popoutContainer}>
+          <PopoutMenu links={links} />
+        </div>
       </div>
     </div>
   )

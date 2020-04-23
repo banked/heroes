@@ -90,6 +90,7 @@ const SEO = (props: Props) => {
         name="twitter:image"
         content={`${site.siteMetadata.siteUrl}/shareImage.png`}
       />
+      <link rel="stylesheet" href="https://use.typekit.net/oej1ggm.css" />
     </Helmet>
   )
 }

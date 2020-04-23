@@ -8,7 +8,7 @@ import Partners from "../components/partners/Partners"
 const NewsPage = () => {
   return (
     <Layout>
-      <SEO title="Collaborators" />
+      <SEO title="Partners" />
       <BasicPage>
         <Partners />
       </BasicPage>

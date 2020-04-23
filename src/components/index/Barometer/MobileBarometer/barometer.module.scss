@@ -1,17 +1,13 @@
 .container {
   margin-top: 30px;
-  max-width: 340px;
   width: 100%;
   display: none;
 }
 
-.innerContainer {
-}
-
 .barometer {
   position: relative;
-  height: 4px;
-  width: 280px;
+  height: 9px;
+  width: 100%;
   border-radius: 2px;
   overflow: hidden;
 }
@@ -26,16 +22,18 @@
   right: 0;
   margin: auto;
   background: #dbe4eb;
+  border-radius: 7px;
 }
 
 .rectangle {
+  border-radius: 7px;
   position: absolute;
   height: 100%;
   top: 0;
   bottom: 0;
   left: 0;
   margin: auto;
-  background: #1574f6;
+  background-image: linear-gradient(to bottom, #ffd664, #ffbc03);
 }
 
 .content {
@@ -43,29 +41,18 @@
 }
 
 .amount {
-  font-size: 26px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #14161b;
-  display: inline;
+  font-size: 42px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
   margin-right: 5px;
 }
 
 .target {
-  opacity: 0.8;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #14161b;
-  display: inline;
+  font-size: 16px;
+  line-height: 1.38;
+  color: #ffffff;
+  margin: 0;
 }
 
 .description {
@@ -83,7 +70,7 @@
 
 @media (max-width: 779px) {
   .container {
-    display: flex;
+    display: block;
   }
 }
 

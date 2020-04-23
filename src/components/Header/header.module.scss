@@ -24,15 +24,7 @@
 .logoLink {
   svg {
     path {
-      fill: #3b3b4d;
-    }
-  }
-
-  &:hover {
-    svg {
-      path {
-        fill: $primary-color;
-      }
+      fill: $primary-color;
     }
   }
 }
@@ -41,10 +33,49 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
 
-  @media (max-width: 779px) {
-    display: none;
-  }
+.link {
+  font-size: 16px;
+  // font-family: acumin-pro-extra-condensed;
+  font-weight: 900;
+  line-height: 0.9;
+  color: #00a6ff;
+  text-decoration: none;
+  margin: 0 8px;
+  text-transform: uppercase;
+}
+
+.nhsButton {
+  cursor: pointer;
+  border-radius: 3px;
+  border: solid 1px $primary-color;
+  padding: 11px 12px;
+  font-size: 16px;
+  // font-family: acumin-pro-extra-condensed;
+  font-weight: 900;
+  line-height: 0.9;
+  text-align: center;
+  color: $primary-color;
+  background-color: transparent;
+  text-transform: uppercase;
+  margin: 0 8px;
+}
+
+.donateButton {
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: #ffc84e;
+  font-size: 16px;
+  // font-family: acumin-pro-extra-condensed;
+  font-weight: 900;
+  line-height: 0.9;
+  text-align: center;
+  color: black;
+  padding: 11px 12px;
+  border: 0;
+  margin: 0 8px;
+  text-transform: uppercase;
 }
 
 .removePadding {
@@ -68,6 +99,16 @@
   margin-right: 20px;
 }
 
+.popoutContainer {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .link {
+    display: none;
+  }
+}
+
 @media (max-width: 779px) {
   .container {
     background: $primary-color;
@@ -83,38 +124,30 @@
     z-index: 50;
   }
 
-  .popoutContainer {
-    padding-right: 20px;
-  }
-
-  .logoSmall {
-    display: block;
-  }
-
-  .logoLarge {
+  .links {
     display: none;
   }
 
-  .logoLink {
-    position: relative;
-    padding-left: 20px;
+  .desktopContent {
+    width: 95%;
+    margin: auto;
+  }
 
+  .donateButton {
+    background: $primary-color;
+    color: white;
+    margin-right: 0;
+  }
+
+  .logoLink {
     svg {
       path {
-        fill: #fff;
-      }
-    }
-
-    &:hover {
-      svg {
-        path {
-          fill: #fff;
-        }
+        fill: white;
       }
     }
   }
 
-  .removePadding {
-    display: flex;
+  .popoutContainer {
+    display: block;
   }
 }
