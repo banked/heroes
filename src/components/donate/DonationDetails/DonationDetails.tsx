@@ -1,4 +1,5 @@
 import React from "react"
+import classnames from "classnames"
 
 import * as styles from "./DonationDetails.module.scss"
 
@@ -10,6 +11,7 @@ export interface DonationDetailsState {
   name: string;
   email: string;
   termsAndConditions: boolean;
+  emailValid: boolean,
 }
 
 class DonationDetails extends React.Component<Props, DonationDetailsState> {
@@ -17,7 +19,8 @@ class DonationDetails extends React.Component<Props, DonationDetailsState> {
   state = {
     name: '',
     email: '',
-    termsAndConditions: false
+    termsAndConditions: false,
+    emailValid: true,
   }
 
   handleNameChange = (e: React.FormEvent<HTMLInputElement>):void => {
@@ -25,7 +28,7 @@ class DonationDetails extends React.Component<Props, DonationDetailsState> {
   };
 
   handleEmailChange = (e: React.FormEvent<HTMLInputElement>):void => {
-    this.setState({ email: e.currentTarget.value });
+    this.setState({ email: e.currentTarget.value, emailValid: e.currentTarget.validity.valid || e.currentTarget.value === '' });
   };
 
   handleTermsAndConditionsChange = (e: React.FormEvent<HTMLInputElement>):void => {
@@ -63,7 +66,7 @@ class DonationDetails extends React.Component<Props, DonationDetailsState> {
             <label className={styles.inputLabel} htmlFor="payment_session_email">Email Address</label>
             <input
               required
-              className={styles.input}
+              className={!this.state.emailValid ? classnames(styles.input_error, styles.input)  : styles.input}
               type="email"
               placeholder="Enter your email address"
               onChange={this.handleEmailChange}
@@ -71,6 +74,7 @@ class DonationDetails extends React.Component<Props, DonationDetailsState> {
               autoComplete="email"
               id="payment_session_email"
             />
+            {!this.state.emailValid && <span className={styles.error}>Please enter a valid email address</span>}
           </div>
 
           <div className={styles.termsAndConditions}>
