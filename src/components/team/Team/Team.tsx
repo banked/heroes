@@ -1,6 +1,6 @@
 import React from "react"
 
-import * as styles from "./aboutUs.module.scss"
+import * as styles from "./team.module.scss"
 
 import twitterLogo from "../../../images/socialIcons/twitter.svg"
 import dawson from "../../../images/team/dawson.jpg"

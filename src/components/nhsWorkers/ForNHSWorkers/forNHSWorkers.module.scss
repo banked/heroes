@@ -1,0 +1,111 @@
+@import "../../../scss/constants.scss";
+
+.container {
+  background: $primary-color;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.innerContainer {
+  width: 90%;
+  margin: auto;
+  max-width: 1080px;
+}
+
+.itemsContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.innerLinkContainer {
+  display: flex;
+  align-items: center;
+  padding: 20px 25px;
+}
+
+.link {
+  width: 48%;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: 0 7px 6px 0 rgba(43, 3, 146, 0.1), 0 5px 0 0 #c8eafd;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
+.iconContainer {
+  min-width: 80px;
+  height: 80px;
+  box-shadow: inset 1px 1px 3px 0 rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 166, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 55px;
+}
+
+.title {
+  font-family: PoetsenOne;
+  font-size: 50px;
+  letter-spacing: -1.19px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.description {
+  max-width: 743px;
+  font-size: 18px;
+  line-height: 1.44;
+  text-align: center;
+  color: #ffffff;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.itemDescription {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: normal;
+  color: #00a6ff;
+  margin-left: 30px;
+
+  @media (max-width: 1000px) {
+    font-size: 24px;
+  }
+}
+
+.longDescription {
+  display: block;
+}
+
+.shortDescription {
+  display: none;
+}
+
+@media (max-width: 779px) {
+  .innerLinkContainer {
+    flex-direction: column;
+  }
+
+  .itemDescription {
+    margin-left: 0;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .longDescription {
+    display: none;
+  }
+
+  .shortDescription {
+    display: block;
+  }
+}

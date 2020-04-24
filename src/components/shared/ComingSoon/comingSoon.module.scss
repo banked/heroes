@@ -1,0 +1,110 @@
+@import "../../../scss/constants.scss";
+@import "../../../scss/mixins.scss";
+
+.container {
+  width: 100%;
+  background-color: $primary-color;
+  padding: 70px 0;
+}
+
+.innerContainer {
+  max-width: 1080px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imageContainer {
+  width: 134px;
+  height: 134px;
+  background-color: #cdeeff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-family: PoetsenOne;
+  font-size: 50px;
+  letter-spacing: -1px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 10px;
+  max-width: 90%;
+}
+
+.byline {
+  font-size: 18px;
+  line-height: 1.44;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 60px;
+  max-width: 90%;
+}
+
+.applicationContainer {
+  background: white;
+  padding: 43px 5% 15px 5%;
+}
+
+.applicationTitle {
+  font-family: PoetsenOne;
+  font-size: 50px;
+  letter-spacing: -1px;
+  text-align: center;
+  color: #000000;
+  margin-top: 1px;
+  margin-bottom: 28px;
+}
+
+.applicationByline {
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 45px;
+}
+
+.linkContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.38;
+  color: #000000;
+  margin-right: 30px;
+}
+
+.button {
+  background-color: $primary-color;
+  padding: 19px 49px;
+  border: 0;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1.16;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.disclaimer {
+  font-size: 12px;
+  line-height: 1.42;
+  text-align: center;
+  color: #00a6ff;
+}
+
+@media (max-width: 779px) {
+  .linkContainer {
+    flex-direction: column;
+  }
+
+  .description {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
