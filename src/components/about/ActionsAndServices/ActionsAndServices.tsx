@@ -85,7 +85,7 @@ const items = [
   },
   {
     icon: counselling,
-    title: "Meal & Food Delivery",
+    title: "Meals & Food Delivery",
     details: (
       <>
         <p>
