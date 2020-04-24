@@ -1,10 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
+import classnames from "classnames"
 
 import Layout from "../../components/donate/Layout"
 
 
-import * as styles from "../../components/donate/shared.module.scss";
+import * as sharedStyles from "../../components/donate/shared.module.scss";
 
 import { renderStatic } from "react-helmet"
 
@@ -13,12 +14,13 @@ const DonateSuccessPage = () => {
 
     return (
       <Layout>
-        <div className={styles.layout}>
-          <h2>Payment Failed</h2>
-          <p>Unfortunately we were not able to proccess your donation.</p>
-          <p>Please try again.</p>
-
-          <Link className={styles.button} to='/donate' >Go Back</Link>
+        <div className={sharedStyles.layout}>
+          <div className={sharedStyles.complete_text}>
+            <h2>Payment Failed</h2>
+            <p>Unfortunately we were not able to proccess your donation.</p>
+            <p>Please try again.</p>
+          </div>
+          <Link className={classnames(sharedStyles.button, sharedStyles.buttonEnabled)} to='/donate' >Go Back</Link>
         </div>
       </Layout>
     )
