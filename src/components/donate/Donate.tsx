@@ -1,6 +1,5 @@
 import React from "react"
-// import { Link } from "gatsby"
-
+import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
 import DonationAmount from "./DonationAmount"
 import DonationDetails, { DonationDetailsState }  from "./DonationDetails"
 
@@ -49,6 +48,13 @@ class Donate extends React.Component<{}, DonateState> {
     const { name, email, amount } = this.state
 
     this.setState({ loading: provider })
+
+    trackCustomEvent({
+      category: "Button",
+      action: "Click",
+      label: `Pay with ${provider}`,
+      value: amount,
+    })
 
     makePaymentRequest({ provider, name, email, amount })
     .then((response) => {
