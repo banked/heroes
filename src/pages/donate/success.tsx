@@ -22,7 +22,7 @@ const DonateSuccessPage = () => {
     return (
       <Layout>
         <div className={styles.layout}>
-          <div className={styles.complete_text}>
+          <div className={styles.successText}>
             <h2>Payment Successful!</h2>
             <p>A big thank you from everyone at Heroes.</p>
             <p>Please follow us on social, and share with friends &amp; family.</p>

@@ -15,7 +15,7 @@ const DonateSuccessPage = () => {
     return (
       <Layout>
         <div className={sharedStyles.layout}>
-          <div className={sharedStyles.complete_text}>
+          <div className={sharedStyles.errorText}>
             <h2>Payment Failed</h2>
             <p>Unfortunately we were not able to proccess your donation.</p>
             <p>Please try again.</p>
