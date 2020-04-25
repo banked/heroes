@@ -15,12 +15,10 @@ const ArtForHeroes = () => {
         <div className={styles.overlay}>
           <h1 className={styles.overlayTitle}>Art For Heroes</h1>
           <p className={styles.description}>
-            Tum dicere exorsus est laborum et quas molestias excepturi sint,
-            obcaecati cupiditate non intellegamus, tu paulo ante cum teneam
-            sententiam, quid bonum sit extremum
-          </p>
-          <p className={styles.description}>
-            Faciunt, ut ipsi auctori huius disciplinae.
+            In partnership with Maddox Gallery we launched Art for HEROES, a
+            collaboration of fantastic artists, including photographer David
+            Yarrow and musician Boy George, who donated pieces to raise money
+            for NHS staff.
           </p>
           <div className={styles.buttonContainer}>
             <a

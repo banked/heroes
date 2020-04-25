@@ -80,7 +80,8 @@
   margin-right: 30px;
 }
 
-.button {
+.button,
+.container button {
   background-color: $primary-color;
   padding: 19px 49px;
   border: 0;
@@ -96,6 +97,23 @@
   line-height: 1.42;
   text-align: center;
   color: #00a6ff;
+}
+
+.customContentContainer {
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  span {
+    padding-right: 50px;
+  }
+
+  button {
+    width: 185px;
+  }
 }
 
 @media (max-width: 779px) {

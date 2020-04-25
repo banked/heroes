@@ -1,12 +1,40 @@
 import * as React from "react"
+import { Link } from "gatsby"
+
 import * as styles from "./comingSoon.module.scss"
+
+const ConditionalLink = ({
+  link,
+  children,
+}: {
+  link: string
+  children: React.ReactNode
+}) =>
+  link.charAt(0) === "/" ? (
+    <Link className={styles.link} to={link}>
+      {children}
+    </Link>
+  ) : (
+    <a
+      className={styles.link}
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {children}
+    </a>
+  )
 
 export interface Details {
   title: string
   byline: string
   applyFor: string
   icon: string
-  link: string
+  applyByline: string
+  basicContent?: {
+    website: string
+  }
+  customContent?: JSX.Element
 }
 
 const ComingSoonPage = ({ details }: { details: Details }) => (
@@ -21,28 +49,21 @@ const ComingSoonPage = ({ details }: { details: Details }) => (
         <h4 className={styles.applicationTitle}>
           Apply for {details.applyFor}
         </h4>
-        <p className={styles.applicationByline}>
-          quorum nihil molestiae consequatur, vel eum iure reprehenderit, qui
-          officia deserunt mollitia animiid totum evertitur eo delectu rerum, id
-          ne ad id est.
-        </p>
-        <div className={styles.linkContainer}>
-          <span className={styles.description}>
-            Ut placet, inquam tum dicere exorsus est cumque.
-          </span>
-          <a href={details.link} target="_blank" rel="noopener noreferrer">
-            <button className={styles.button}>
-              Apply for {details.applyFor}
-            </button>
-          </a>
-        </div>
-        <p className={styles.disclaimer}>
-          Certe, inquam, pertinax non existimant oportere nimium nos amice et
-          argumentandum et expedita distinctio nam libero tempore, cum a natura
-          incorrupte atque corrupti, quos dolores suscipiantur maiorum dolorum
-          effugiendorum gratia inquam, pertinax non emolumento aliquo, sed
-          ipsius honestatis decore laudandis.
-        </p>
+        <p className={styles.applicationByline}>{details.applyByline}</p>
+        {details.basicContent && (
+          <div className={styles.linkContainer}>
+            <ConditionalLink link={details.basicContent.website}>
+              <button className={styles.button}>
+                Apply for {details.applyFor}
+              </button>
+            </ConditionalLink>
+          </div>
+        )}
+        {details.customContent && (
+          <div className={styles.customContentContainer}>
+            {details.customContent}
+          </div>
+        )}
       </div>
     </div>
   </div>

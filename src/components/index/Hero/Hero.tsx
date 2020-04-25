@@ -12,17 +12,17 @@ export const stats = [
   {
     icon: ppeIcon,
     stat: "10,000",
-    description: "PPE units delivered",
+    description: "PPE units sourced",
   },
   {
     icon: foodIcon,
-    stat: "3,200",
-    description: "Meals to NHS workers",
+    stat: "30,677",
+    description: "meals and treats to NHS workers",
   },
   {
     icon: grantsIcon,
-    stat: "£78,000",
-    description: "Financial relief",
+    stat: "£150,000",
+    description: "hardship fund for financial relief",
   },
 ]
 
@@ -36,10 +36,12 @@ const Hero = () => {
             Help us
           </h1>
           <p className={styles.description}>
-            Omne animal, simul atque corrupti, quos tu tam egregios viros censes
-            tantas res gessisse sine causa? quae fuerit causa, nollem me ab illo
-            inventore veritatis et impetus quo voluptas in bonis sit extremum et
-            dolore.
+            HEROES is a charity founded by NHS workers, for NHS workers. We
+            exist to support the welfare and wellbeing of those fighting to keep
+            us healthy and safe during the COVID-19 crisis, and beyond. Our
+            services cover the physical, mental and day-to-day needs of all NHS
+            HEROES, from doctors and nurses to cleaners and porters. Together,
+            we’ll continue to make a real difference.
           </p>
           <div className={styles.statsContainer}>
             {stats.map(stat => (

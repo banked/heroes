@@ -141,6 +141,26 @@
   }
 }
 
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  border-radius: 3px;
+  background-color: $primary-color;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 0.9;
+  text-align: center;
+  color: white;
+  border: 0;
+  padding: 11px 34px;
+  margin: auto;
+  cursor: pointer;
+}
+
 @media (max-width: 591px) {
   .itemContainer {
     width: 100%;

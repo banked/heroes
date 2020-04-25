@@ -8,7 +8,7 @@ const TestimonialsPreview = () => {
     <div className={styles.container}>
       <div className={styles.linkContainer}>
         <h4 className={styles.title}>How do we know who we give money to?</h4>
-        <Link to="/">
+        <Link to="/what-we-have-done">
           <button className={styles.button}>Testimonials</button>
         </Link>
       </div>

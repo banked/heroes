@@ -7,8 +7,7 @@
 .dropDownMenu {
   position: absolute;
   top: -30px;
-  left: 0;
-  right: 0;
+  left: -220px;
   margin: auto;
   border-radius: 5px;
   width: 210px;
@@ -25,8 +24,15 @@
     display: flex;
   }
 
-  .dropDownIcon {
-    transform: rotate(0deg);
+  .dropDownText {
+    color: $primary-color;
+    svg {
+      transform: rotate(0deg);
+
+      path {
+        fill: $primary-color;
+      }
+    }
   }
 }
 
@@ -38,15 +44,19 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: 1px;
-  color: #1574f6;
+  color: white;
   text-transform: uppercase;
   margin: 0px 30px 0 24px;
-}
 
-.dropDownIcon {
-  margin-right: 8px;
-  margin-bottom: 3px;
-  transform: rotate(-90deg);
+  svg {
+    margin-right: 8px;
+    margin-bottom: 3px;
+    transform: rotate(-90deg);
+
+    path {
+      fill: white;
+    }
+  }
 }
 
 .headerLinks {
@@ -72,6 +82,18 @@
   }
 
   &:hover {
-    color: #1574f6;
+    color: $primary-color;
+  }
+}
+
+.whiteHeader {
+  .dropDownText {
+    color: $primary-color;
+
+    svg {
+      path {
+        fill: $primary-color;
+      }
+    }
   }
 }

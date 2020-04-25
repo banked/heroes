@@ -1,0 +1,22 @@
+@import "../../../scss/constants.scss";
+@import "../../../scss/mixins.scss";
+
+.container {
+  max-width: 1080px;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 200px;
+}
+
+.content {
+  .p {
+    font-size: 16px;
+    line-height: 1.38;
+    color: #000000;
+    display: inline-block;
+  }
+
+  strong {
+    font-weight: 500;
+  }
+}

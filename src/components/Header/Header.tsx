@@ -6,6 +6,7 @@ import PopoutMenu from "./PopoutMenu"
 import * as styles from "./header.module.scss"
 
 import Logo from "../../images/logo.inline.svg"
+import DropDownMenu from "../shared/DropDownMenu"
 
 export const links = [
   {
@@ -17,13 +18,17 @@ export const links = [
     link: "team",
   },
   {
-    displayText: "Collaborators",
-    link: "collaborators",
+    displayText: "Ambassadors",
+    link: "ambassadors",
   },
-  // {
-  //   displayText: "What We've Done",
-  //   link: "what-we-have-done",
-  // },
+  {
+    displayText: "What We've Done",
+    link: "what-we-have-done",
+  },
+  {
+    displayText: "Beneficiaries",
+    link: "beneficiaries",
+  },
   {
     displayText: "News",
     link: "news",
@@ -50,11 +55,12 @@ const Header = ({ whiteHeader = false }: { whiteHeader?: boolean }) => {
             </div>
           </Link>
           <div className={styles.links}>
-            {links.map(link => (
+            <DropDownMenu whiteHeader={whiteHeader} />
+            {/* {links.map(link => (
               <Link className={styles.link} to={link.link} key={link.link}>
                 {link.displayText}
               </Link>
-            ))}
+            ))} */}
             <button className={styles.nhsButton}>NHS Workers</button>
             <button className={styles.donateButton}>Donate</button>
           </div>

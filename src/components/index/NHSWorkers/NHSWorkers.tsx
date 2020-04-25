@@ -10,16 +10,11 @@ const NHSWorkers = () => {
       <div className={styles.innerContainer}>
         <div className={styles.content}>
           <h4 className={styles.title}>
-            Are you a NHS worker that needs assistance?
+            Are you an NHS worker that needs assistance?
           </h4>
           <p className={styles.description}>
-            Quid ex ea voluptate ponit, quod maxime consuevit iactare vestra se
-            esse appetendum, alterum aspernandum sentiamus alii autem, quibus
-            ego assentior, cum memoriter etiam .
-          </p>
-          <p className={styles.description}>
-            Consequuntur magni dolores eos, qui blanditiis praesentium
-            voluptatum deleniti atque.
+            We offer help with childcare, transport, food, hardship funding,
+            wellbeing and psychological services for ALL healthcare staff.
           </p>
           <button className={styles.moreInfo}>More Info</button>
           <div className={styles.supportedBy}>
