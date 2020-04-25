@@ -28,6 +28,14 @@ const socials = [
   },
 ]
 
+const footerLinks = [
+  ...links,
+  {
+    displayText: "Privacy",
+    link: "/privacy",
+  },
+]
+
 const Footer = () => {
   return (
     <div className={styles.container}>
@@ -51,7 +59,7 @@ const Footer = () => {
         <p className={styles.contactEmail}>helpthemhelpus.co.uk </p>
       </div>
       <div className={styles.linkContainer}>
-        {links.map(link => (
+        {footerLinks.map(link => (
           <Link
             key={link.link}
             to={`/${link.link}`}
