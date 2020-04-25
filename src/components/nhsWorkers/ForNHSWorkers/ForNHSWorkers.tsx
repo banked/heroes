@@ -11,25 +11,25 @@ const items = [
     icon: foodIcon,
     label: "PPE",
     shortLabel: "PPE",
-    link: "#",
+    link: "/nhs-workers/ppe",
   },
   {
     icon: foodIcon,
-    label: "Meal & Food",
-    shortLabel: "Meal & Food",
-    link: "#",
+    label: "Meals & Food",
+    shortLabel: "Meals & Food",
+    link: "/nhs-workers/meals-and-food",
   },
   {
     icon: foodIcon,
     label: "Childcare",
     shortLabel: "Childcare",
-    link: "#",
+    link: "/nhs-workers/childcare",
   },
   {
     icon: foodIcon,
     label: "Counselling Therapy",
     shortLabel: "Counselling",
-    link: "#",
+    link: "/nhs-workers/counselling",
   },
   {
     icon: foodIcon,
@@ -41,7 +41,7 @@ const items = [
     icon: foodIcon,
     label: "Grants & Financial Assistance",
     shortLabel: "Grants",
-    link: "#",
+    link: "/grants-and-financial-assistance",
   },
 ]
 

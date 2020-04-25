@@ -17,7 +17,7 @@ const details: Details = {
     "HEROES have collaborated with one of the country’s largest childcare providers to help NHS workers find volunteer childcare. This exciting collaboration will be announced shortly.",
   icon: foodIcon,
   basicContent: {
-    website: "/grants",
+    website: "/grants-and-financial-assistance",
   },
 }
 

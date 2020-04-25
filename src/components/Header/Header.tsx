@@ -61,7 +61,9 @@ const Header = ({ whiteHeader = false }: { whiteHeader?: boolean }) => {
                 {link.displayText}
               </Link>
             ))} */}
-            <button className={styles.nhsButton}>NHS Workers</button>
+            <Link to="/nhs-workers">
+              <button className={styles.nhsButton}>NHS Workers</button>
+            </Link>
             <button className={styles.donateButton}>Donate</button>
           </div>
           <div className={styles.popoutContainer}>

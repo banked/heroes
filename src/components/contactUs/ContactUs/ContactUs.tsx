@@ -6,7 +6,7 @@ import googleForms from "../../../images/googleForms.png"
 
 const links = [
   {
-    displayText: "I want more information",
+    displayText: "I Want More Information",
     link: "https://forms.gle/uFmNtFXtH3JHaC4H7",
   },
   {
