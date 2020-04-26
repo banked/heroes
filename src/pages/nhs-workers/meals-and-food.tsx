@@ -6,7 +6,7 @@ import BasicPage from "../../templates/BasicPage"
 import ComingSoonPage from "../../components/shared/ComingSoon"
 import { Details } from "../../components/shared/ComingSoon/ComingSoon"
 
-import foodIcon from "../../images/food_icon.svg"
+import food from "../../images/forNHSWorkers/food.png"
 
 const details: Details = {
   title: "Food",
@@ -14,8 +14,8 @@ const details: Details = {
     "With supermarkets reducing times and increasing social distancing, coffee shops and cafes closed, NHS workers at work or at home, need food. HEROES are here to help.",
   applyFor: "Food",
   applyByline:
-    "HEROES regularly deliver hot food from restaurants and super-chefs to hospitals, GPs and hospices all around the country. If you would like to get some food in your place of work.",
-  icon: foodIcon,
+    "HEROES regularly deliver hot food from restaurants and super-chefs to hospitals, GPs and hospices all around the country. If you would like to get some food in your place of work join our Healthcare HEROES Network.",
+  icon: food,
   basicContent: {
     website: "/grants-and-financial-assistance",
   },

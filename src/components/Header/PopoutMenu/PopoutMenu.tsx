@@ -79,13 +79,25 @@ class PopoutMenuComponent extends React.Component<Props, State> {
         >
           <div className={styles.menuWrapper}>
             <div className={styles.menuContent}>
-              <Link
-                onClick={() => this.menuItemClicked("/")}
-                key="home"
-                className={styles.link}
-                to={`/`}
+              <a
+                className={classnames(styles.link, styles.bigLink)}
+                href="https://www.gofundme.com/f/help-them-help-us"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Home
+                DONATE
+              </a>
+              <Link
+                className={classnames(styles.link, styles.bigLink)}
+                to="/nhs-workers"
+              >
+                NHS Workers
+              </Link>
+              <Link
+                className={classnames(styles.link, styles.bigLink)}
+                to="/about-us"
+              >
+                About Us
               </Link>
               {this.props.links.map(link => (
                 <Link
@@ -97,14 +109,6 @@ class PopoutMenuComponent extends React.Component<Props, State> {
                   {link.displayText}
                 </Link>
               ))}
-              <a
-                className={styles.link}
-                href="https://www.gofundme.com/f/help-them-help-us"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <b>DONATE</b>
-              </a>
             </div>
           </div>
         </div>

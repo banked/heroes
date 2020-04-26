@@ -70,7 +70,8 @@ const Footer = () => {
         ))}
       </div>
       <p className={styles.copyright}>
-        © Heroes Foundation {new Date().getFullYear()}
+        © HEROES (HEALTHCARE EXTRAORDINARY RESPONSE ORGANISATION, for EDUCATION
+        and SUPPORT) {new Date().getFullYear()}
       </p>
     </div>
   )

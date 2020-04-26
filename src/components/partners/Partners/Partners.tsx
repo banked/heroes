@@ -35,7 +35,7 @@ const content = [
     name: "Selfridges",
     icon: selfridges,
     description:
-      "Londons luxury department store Selfridges made sure NHS frontline staff didnt miss out this Easter with a kind donation of 1,600 Easter eggs from their stock. We are working with Selfridges to look at on-going opportunities for support.",
+      "Our long-term friend and partner, Selfridges, have helped us to deliver thousands of Easter eggs and treats to NHS workers all over the country. Their #KindChallenge is running now on Instagram.",
   },
   {
     name: "Bayliss and Harding",
@@ -47,26 +47,26 @@ const content = [
     name: "Addison Lee",
     icon: addisonLee,
     description:
-      "We teamed up with Addison Lee to help deliver Easter eggs donated by Selfidges to the frontline. Addison Lee provided the cars and drivers that delivered 200 eggs to London hopstals, GP's and hospices.",
+      "We teamed up with Addison Lee to help deliver Easter eggs donated by Selfridges to the frontline. Addison Lee provided the cars and drivers that delivered 200 eggs to London hopstals, GP's and hospices.",
   },
   {
     name: "Estee Lauder",
     icon: esteeLauder,
     description:
-      "We were approached by Estee Lauder for help delivering 500 medical masks to NHS staff in need. Once received, we distributed the masks to various hospices and GP surgeries around the UK.",
+      "Estee Lauder kindly donated 500 medical masks and 1000 bottles of hand sanitizer to NHS staff in need. Once received, we distributed across the country to various hospices and GP surgeries.",
   },
   {
     name: "Flavour Management",
     icon: flavourManagement,
     description:
-      "The team at Flavour Management represent some of the best chefs in the UK. They've been crucial in the organisation and delivery of freshly prepared, hot meals to hospitals all over the country, including pizzas cooked by Aldo Zilli and paella made by Omar Allibhoy. We're pleased to continue our partnership, to feed more NHS staff.",
+      "The team at Flavour Management represent some of the best chefs in the UK. Tony Singh, Francesco Mazzei, Aldo Zilli and Omar Allibhoy have all cooked the highest quality freshly prepared hot meals for hospitals from Edinburgh to Kent. We’re please continue our partnership, to feed more NHS staff.",
   },
-  {
-    name: "Contractors Appeal",
-    icon: contractorsAppeal,
-    description:
-      "Set up to source and purchase PPE from the UK construction sector before distributing it to NHS staff, care workers and vulnerable groups – Contractors Appeal is our on-going partner for protecting those in need.",
-  },
+  // {
+  //   name: "Contractors Appeal",
+  //   icon: contractorsAppeal,
+  //   description:
+  //     "Set up to source and purchase PPE from the UK construction sector before distributing it to NHS staff, care workers and vulnerable groups – Contractors Appeal is our on-going partner for protecting those in need.",
+  // },
 ]
 
 const Partners = () => {

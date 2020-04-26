@@ -59,7 +59,7 @@
 
   a {
     text-decoration: none;
-    margin: 4px auto;
+    margin: 4px 20px 4px 40px;
     color: #ffffff;
   }
 }
@@ -74,9 +74,13 @@
   font-style: normal;
   line-height: 2.5;
   letter-spacing: 1px;
-  text-align: center;
+  // text-align: center;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.bigLink {
+  font-size: 32px;
 }
 
 .tagline {

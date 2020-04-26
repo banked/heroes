@@ -161,6 +161,12 @@
   cursor: pointer;
 }
 
+.bmaLogoContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 591px) {
   .itemContainer {
     width: 100%;

@@ -30,7 +30,7 @@ export interface Details {
   byline: string
   applyFor: string
   icon: string
-  applyByline: string
+  applyByline: string | JSX.Element
   basicContent?: {
     website: string
   }

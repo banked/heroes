@@ -266,9 +266,9 @@ If we need to use your personal data for an unrelated purpose, we will notify yo
 Your personal data may be disclosed by us to the following third parties:
 
 - third parties which provide technical and banking services to us;
-- ther service providers including IT suppliers, administration services providers;
+- other service providers including IT suppliers, administration services providers;
 - public bodies, including regulatory bodies, where we are obliged or permitted by law to do so (this may include the Information Commissioner&#39;s Office); and
-- ur professional advisors including lawyers and auditors.
+- our professional advisors including lawyers and auditors.
 
 We may also disclose your personal data to third parties to whom we choose to sell, transfer, or merge parts of our organisation or our assets. Alternatively, we may seek to obtain or merge with other organisations. If a change happens to our organisation, then our new owners may use your personal data in the same way as set out in this Privacy Notice.
 
@@ -281,7 +281,7 @@ Your personal data will in limited circumstances be transferred outside the Euro
 When we transfer your personal data outside the EEA (or the UK once the Brexit transition period has ended), we will take appropriate steps to protect your information, including:
 
 - entering into agreements with third parties who will receive your personal data, which include the &quot;Standard Contractual Clauses&quot;, being clauses the European Commission (or the equivalent UK body once the Brexit transition period has ended) has determined offer adequate protection for your information; or
-- nly transferring the information to organisations within countries that the European Commission and/or the UK (depending on the circumstances) has judged offers adequate protection for your information.
+- only transferring the information to organisations within countries that the European Commission and/or the UK (depending on the circumstances) has judged offers adequate protection for your information.
 
 ## Data security
 
@@ -312,7 +312,7 @@ Right to request the transfer of your personal data to you or to a third party â
 
 ## Right to lodge a complaint
 
-If you have any complaints about how the we handle your personal data, please contact us by telephone on 07886 643 301, or by email at complaints@helpthemhelpus.co.uk and we will do our best to assist.
+If you have any complaints about how the we handle your personal data, please contact us by telephone on 07886 643 301, or by email at [complaints@helpthemhelpus.co.uk](mailto:complaints@helpthemhelpus.co.uk) and we will do our best to assist.
 
 You also have a right to make a complaint to the supervisory authority in your country of residence or employment or place of the alleged infringement. The Information Commissioner&#39;s Office (&quot;ICO&quot;) is the UK supervisory authority for data protection issues. You can contact the ICO:
 

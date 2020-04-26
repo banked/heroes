@@ -75,11 +75,12 @@
 }
 
 .title {
-  font-family: PoetsenOne;
+  font-family: acumin-pro-extra-condensed;
   font-size: 50px;
-  letter-spacing: -1.25px;
   color: $primary-color;
   margin: 0;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
 .icon {

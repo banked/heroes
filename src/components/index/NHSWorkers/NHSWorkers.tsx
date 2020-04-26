@@ -3,6 +3,7 @@ import * as styles from "./nhsWorkers.module.scss"
 
 import bma from "../../../images/bma.png"
 import handHoldingHeart from "../../../images/hand_holding_heart.png"
+import { Link } from "gatsby"
 
 const NHSWorkers = () => {
   return (
@@ -16,7 +17,9 @@ const NHSWorkers = () => {
             We offer help with childcare, transport, food, hardship funding,
             wellbeing and psychological services for ALL healthcare staff.
           </p>
-          <button className={styles.moreInfo}>More Info</button>
+          <Link to="/nhs-workers">
+            <button className={styles.moreInfo}>More Info</button>
+          </Link>
           <div className={styles.supportedBy}>
             <span>Supported By</span>
             <img src={bma} alt="" />

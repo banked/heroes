@@ -6,16 +6,16 @@ import BasicPage from "../../templates/BasicPage"
 import ComingSoonPage from "../../components/shared/ComingSoon"
 import { Details } from "../../components/shared/ComingSoon/ComingSoon"
 
-import foodIcon from "../../images/food_icon.svg"
+import childcare from "../../images/forNHSWorkers/childcare.png"
 
 const details: Details = {
   title: "Childcare",
   byline:
-    "NHS workers will struggle to balance their professional commitments with their families. HEROES is committed to supporting childcare requirements, working with generous services and providing small grants to cover childcare costs.",
+    "HEROES have collaborated with the country’s largest childcare provider, childcare.co.uk, to provide free at the point of use childcare services for NHS workers, and to provide the ability for NHS workers to co-op and provide childcare for each other if possible.",
   applyFor: "Childcare Grant",
   applyByline:
-    "HEROES have collaborated with one of the country’s largest childcare providers to help NHS workers find volunteer childcare. This exciting collaboration will be announced shortly.",
-  icon: foodIcon,
+    "To help cover the costs, HEROES members can apply for a small grant up to £1500 specifically for childcare. To find out more visit please visit the grants page.",
+  icon: childcare,
   basicContent: {
     website: "/grants-and-financial-assistance",
   },

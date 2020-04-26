@@ -2,6 +2,8 @@ import React from "react"
 
 import * as styles from "./beneficiaries.module.scss"
 
+import bmaLogo from "../../../images/bma.png"
+
 const Beneficiaries = () => {
   return (
     <div className={styles.container}>
@@ -21,6 +23,9 @@ const Beneficiaries = () => {
         >
           <button className={styles.button}>BMA Giving Website</button>
         </a>
+      </div>
+      <div className={styles.bmaLogoContainer}>
+        <img src={bmaLogo} alt="" />
       </div>
     </div>
   )

@@ -7,7 +7,10 @@ const Featured = () => {
   const { allFile } = useStaticQuery(
     graphql`
       query {
-        allFile(filter: { relativeDirectory: { eq: "featured" } }) {
+        allFile(
+          filter: { relativeDirectory: { eq: "featured" } }
+          sort: { fields: name }
+        ) {
           edges {
             node {
               childImageSharp {
