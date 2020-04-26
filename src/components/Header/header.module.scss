@@ -178,6 +178,16 @@
     }
   }
 
+  .whiteHeader {
+    .logoLink {
+      svg {
+        path {
+          fill: white;
+        }
+      }
+    }
+  }
+
   .popoutContainer {
     display: block;
   }
