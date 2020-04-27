@@ -19,7 +19,7 @@
 }
 
 .selected {
-    background: #5045FE;
+    background: #00a6ff;
     outline: none;
 }
 
@@ -44,11 +44,11 @@
         border-radius: 4px;
         // width: 100%;
         &:focus ~ .custom {
-            background: #5045FE; 
+            background: #00a6ff; 
         }    
     }
     &.custom_selected {
-        background: #5045FE;
+        background: #00a6ff;
     }
     
 }
