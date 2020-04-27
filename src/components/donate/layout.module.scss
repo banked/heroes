@@ -2,7 +2,7 @@
   display: block;
   margin: 0 auto;
   padding: 15px;
-  width: 437px;
+  max-width: 437px;
 }
 
 .logo {
@@ -20,11 +20,7 @@
   background-attachment: fixed;
 }
 
-@media screen and (max-width: 467px) {
-  .logo, .wrapper {
-    width: auto;
-  }
-
+@media screen and (max-width: 470px) {
   .logo {
     padding-left: 20px;
   }  
