@@ -2,7 +2,6 @@
   display: block;
   padding: 20px 40px;
   border-radius: 6px;
-  box-shadow: 0 8px 0 0 #C6C6C8;
   background-color: #98989C;
   border: 0;
   font-size: 16px;
@@ -36,8 +35,8 @@
 }
 
 .buttonEnabled {
-  box-shadow: 0 8px 0 0 #009F57;
-  background-color: #01B965;
+  background-color: #ffc84e;
+  color: black;
 }
 
 .social {
