@@ -43,13 +43,13 @@ const details: Details = {
         distribution of PPE by any organisation which HEROES funds.
       </p>
       <p>
-        Find out more about SHIELD here: and links to{" "}
+        Find out more about SHIELD{" "}
         <a
           href="https://www.shieldcollaborative.org/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          https://www.shieldcollaborative.org/
+          here
         </a>
       </p>
     </>

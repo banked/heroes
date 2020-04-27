@@ -78,7 +78,7 @@ const teamContent = [
     image: jack,
     name: "Jack Chute",
     position: "Creative Content Director",
-    quote: `Worked as a filmmaker for 15 years in commercial, music, and documentary formats."`,
+    quote: `Worked as a filmmaker for 15 years in commercial, music, and documentary formats.`,
     twitterHandle: "jackchute",
   },
 ]

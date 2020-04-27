@@ -13,6 +13,12 @@ import transport from "../../../images/forNHSWorkers/transport.png"
 
 const items = [
   {
+    icon: grants,
+    label: "Grants & Financial Assistance",
+    shortLabel: "Grants",
+    link: "/grants-and-financial-assistance",
+  },
+  {
     icon: ppe,
     label: "PPE",
     shortLabel: "PPE",
@@ -41,12 +47,6 @@ const items = [
     label: "Transport",
     shortLabel: "Transport",
     link: null,
-  },
-  {
-    icon: grants,
-    label: "Grants & Financial Assistance",
-    shortLabel: "Grants",
-    link: "/grants-and-financial-assistance",
   },
 ]
 

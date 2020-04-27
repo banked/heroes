@@ -228,22 +228,6 @@ const items = [
           support grant based on need up to £1500 for childcare, accommodation
           or transport.
         </p>
-        <p>
-          For small grants and other services we verify NHS workers via{" "}
-          <a
-            href="https://www.nhs.net"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            nhs.net
-          </a>{" "}
-          or trust email. For larger grants, NHS workers are verified with a
-          two-step process, including secure email and identification
-          verification via an independent app. Once confirmed as NHS workers,
-          support grants are awarded for specific needs - childcare,
-          accommodation, or travel, due to hardship created by COVID-19. We can
-          deliver funds to a single member only once per funding cycle.
-        </p>
       </>
     ),
   },
