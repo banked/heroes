@@ -17,7 +17,7 @@ const AboutUsPage = () => {
           title="About Us"
           byline="HEROES is committed to the singular mission of protecting the welfare and wellbeing of NHS workers, from physical to mental health to day-to-day necessities."
         />
-        <Videos />
+        {/* <Videos /> */}
         <ActionsAndServices />
         <TestimonialsPreview />
       </BasicPage>

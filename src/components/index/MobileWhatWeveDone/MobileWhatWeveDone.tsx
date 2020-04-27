@@ -9,7 +9,7 @@ const mobileWhatWeveDone = () => (
       <h4 className={styles.title}>What We've Done</h4>
       <p className={styles.description}>
         We've been blown away by the support so far. With your help in four
-        weeks we have achieved.
+        weeks we have achieved:
       </p>
       <div className={styles.statsContainer}>
         {stats.map(stat => (

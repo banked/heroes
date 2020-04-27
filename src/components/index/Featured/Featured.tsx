@@ -14,8 +14,8 @@ const Featured = () => {
           edges {
             node {
               childImageSharp {
-                fixed {
-                  ...GatsbyImageSharpFixed_noBase64
+                fixed(quality: 100) {
+                  src
                 }
               }
             }
@@ -31,9 +31,9 @@ const Featured = () => {
         {allFile.edges.map(edge => {
           return (
             <div className={styles.imageContainer} key={edge.node.id}>
-              <Img
+              <img
                 className={styles.image}
-                fixed={edge.node.childImageSharp.fixed}
+                src={edge.node.childImageSharp.fixed.src}
                 alt=""
               />
             </div>
