@@ -29,9 +29,10 @@ const DropDownMenu = ({ whiteHeader }: { whiteHeader: boolean }) => {
         )}
       >
         <span className={styles.dropDownText}>
-          {/* <img className={styles.dropDownIcon} src={dropDownTriangle} alt="" /> */}
-          <DropDownTriangle />
-          About Us
+          <Link to="/about-us">
+            <DropDownTriangle />
+            About Us
+          </Link>
         </span>
         <div className={styles.headerLinks}>
           {links.map(link => (

@@ -14,7 +14,7 @@ const NHSWorkers = () => {
             Are you an NHS worker that needs assistance?
           </h4>
           <p className={styles.description}>
-            We offer help with childcare, transport, food, hardship funding,
+            We offer help with childcare, transport, food, support grants,
             wellbeing and psychological services for ALL healthcare staff.
           </p>
           <Link to="/nhs-workers">

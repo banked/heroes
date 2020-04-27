@@ -37,7 +37,7 @@ const details: Details = {
           session.
         </span>
         <a
-          href="www.harleytherapy.com/nhs"
+          href="https://www.harleytherapy.com/nhs"
           target="_blank"
           rel="noopener noreferrer"
         >

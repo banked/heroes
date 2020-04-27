@@ -8,9 +8,9 @@ const NHSWorkers = () => {
         <div className={styles.content}>
           <h4 className={styles.title}>Stay informed about Covid-19</h4>
           <p className={styles.description}>
-            At vero eos censes aut voluptates repudiandae sint et accusamus et
-            impetus quo aut petat aut reiciendis voluptatibus maiores alias
-            consequatur aut dolores suscipiantur.
+            Learn more about coronavirus and what you can do at
+            stopthespread.info - a website written by doctors dedicated to
+            providing reliable and actionable information from trusted sources.
           </p>
           <a
             href="https://stopthespread.info"

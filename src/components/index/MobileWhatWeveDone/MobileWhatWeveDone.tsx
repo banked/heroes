@@ -8,8 +8,8 @@ const mobileWhatWeveDone = () => (
     <div className={styles.innerContainer}>
       <h4 className={styles.title}>What We've Done</h4>
       <p className={styles.description}>
-        Laudem et voluptates omittantur maiorum voluptatum deleniti atque
-        insitam in. Primum igitur, quid et molestiae consequatur, vel illum.
+        We've been blown away by the support so far. With your help in four
+        weeks we have achieved.
       </p>
       <div className={styles.statsContainer}>
         {stats.map(stat => (
@@ -24,7 +24,7 @@ const mobileWhatWeveDone = () => (
           </div>
         ))}
       </div>
-      <Link to="/about">
+      <Link to="/about-us">
         <button className={styles.button}>About Us</button>
       </Link>
     </div>

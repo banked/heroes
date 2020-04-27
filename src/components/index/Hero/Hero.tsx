@@ -22,7 +22,7 @@ export const stats = [
   {
     icon: grantsIcon,
     stat: "£150,000",
-    description: "hardship fund for financial relief",
+    description: "support grant fund for financial relief",
   },
 ]
 

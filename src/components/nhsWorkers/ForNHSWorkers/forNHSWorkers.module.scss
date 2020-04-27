@@ -100,6 +100,7 @@
 
     &:before {
       content: "Coming Soon";
+      width: 128px;
       font-size: 20px;
       font-weight: 500;
       font-stretch: normal;
@@ -131,5 +132,21 @@
 
   .shortDescription {
     display: block;
+  }
+
+  .innerLinkContainer {
+    position: relative;
+    padding-bottom: 25px;
+  }
+
+  .disabled {
+    .itemDescription {
+      position: initial;
+      &:before {
+        top: calc(100% - 25px);
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
   }
 }

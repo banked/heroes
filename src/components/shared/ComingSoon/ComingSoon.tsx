@@ -33,6 +33,7 @@ export interface Details {
   applyByline: string | JSX.Element
   basicContent?: {
     website: string
+    buttonText?: string
   }
   customContent?: JSX.Element
 }
@@ -54,7 +55,11 @@ const ComingSoonPage = ({ details }: { details: Details }) => (
           <div className={styles.linkContainer}>
             <ConditionalLink link={details.basicContent.website}>
               <button className={styles.button}>
-                Apply for {details.applyFor}
+                {details.basicContent.buttonText ? (
+                  <>{details.basicContent.buttonText}</>
+                ) : (
+                  <>Apply for {details.applyFor}</>
+                )}
               </button>
             </ConditionalLink>
           </div>

@@ -17,7 +17,8 @@ const details: Details = {
     "HEROES regularly deliver hot food from restaurants and super-chefs to hospitals, GPs and hospices all around the country. If you would like to get some food in your place of work join our Healthcare HEROES Network.",
   icon: food,
   basicContent: {
-    website: "/grants-and-financial-assistance",
+    website: "https://forms.gle/UDBDXTVN4Nm24Qpj9",
+    buttonText: "Join Heroes Network Form",
   },
 }
 

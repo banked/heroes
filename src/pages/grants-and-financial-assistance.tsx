@@ -1,10 +1,10 @@
 import React from "react"
-
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import BasicPage from "../templates/BasicPage"
 import ComingSoonPage from "../components/shared/ComingSoon"
 import { Details } from "../components/shared/ComingSoon/ComingSoon"
+import { trackCustomEvent } from "gatsby-plugin-google-analytics"
 
 import grants from "../images/forNHSWorkers/grants.png"
 
@@ -48,7 +48,17 @@ const details: Details = {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button>Open PDF</button>
+          <button
+            onClick={() => {
+              trackCustomEvent({
+                category: "Grants Application",
+                action: "Click",
+                label: "Grants Application Button Clicked",
+              })
+            }}
+          >
+            Open PDF
+          </button>
         </a>
       </div>
     </>

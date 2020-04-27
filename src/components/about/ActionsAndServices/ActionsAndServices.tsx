@@ -34,9 +34,9 @@ const items = [
             in hospitals and GPs, hospices and care homes
           </li>
           <li>
-            With grassroots manufacturers creating 3D printing hubs to create
-            personal protective equipment such as eyewear. Our London Hub at
-            Makerversity can produce 1500 visors a day currently.
+            Funding grassroots manufacturers creating 3D printing hubs to create
+            personal protective equipment such as eyewear. The London Hub at
+            Makerversity can produce 2000 visors a day currently.
           </li>
         </ol>
         <p>
@@ -51,7 +51,7 @@ const items = [
     ),
   },
   {
-    icon: childcare,
+    icon: partners,
     title: "Our friends and partners",
     details: (
       <>
@@ -63,8 +63,15 @@ const items = [
         <p>
           We work with a range of businesses to provide discounted products
           including gifts, food, and travel. If you are a business and
-          interested in becoming a HEROES partner, get in touch here [link to
-          business contact form].
+          interested in becoming a HEROES partner, get in touch{" "}
+          <a
+            href="https://forms.gle/jivsKZTAeduKYWaq5"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            here
+          </a>
+          .
         </p>
         <p>
           We also work alongside and with other charities helping NHS Workers.
@@ -84,7 +91,7 @@ const items = [
     ),
   },
   {
-    icon: counselling,
+    icon: food,
     title: "Meals & Food Delivery",
     details: (
       <>
@@ -102,26 +109,32 @@ const items = [
     ),
   },
   {
-    icon: education,
+    icon: childcare,
     title: "Childcare",
     details: (
       <>
         <p>
-          We work with the largest childcare provider in the UK, [link to
-          childcare.co.uk], to deliver free and safe childcare options so NHS
-          frontline workers can go to work with peace of mind, and can provide
-          co-op care around the country to look after their children and
-          vice-versa.
+          We work with the largest childcare provider in the UK,{" "}
+          <a
+            href="http://childcare.co.uk/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            childcare.co.uk
+          </a>
+          , to deliver safe childcare options so NHS frontline workers can go to
+          work with peace of mind, and can provide co-op care around the country
+          to look after their children and vice-versa.
         </p>
         <p>
-          We also fund support grants through the hardship fund to cover costs
-          of childcare up to &pound;1000 per cycle.
+          We also fund support grants to cover costs of childcare to those in
+          need of it, up to £1500.
         </p>
       </>
     ),
   },
   {
-    icon: food,
+    icon: fundraising,
     title: "Fundraising",
     details: (
       <>
@@ -131,7 +144,14 @@ const items = [
         <p>
           In combination with the incredible support from the Maddox Gallery and
           Jay Rutland the #ArtForHeroes charity exhibition is currently running
-          and can be viewed here: link to [artforheroes.co.uk]
+          and can be viewed at{" "}
+          <a
+            href="artforheroes.co.uk"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            artforheroes.co.uk
+          </a>
         </p>
         <p>
           In the music world we are honoured by the breadth and depth of talent
@@ -140,13 +160,21 @@ const items = [
         <p>
           We are always on the lookout for new ways to help and raise awareness.
           If you want to fundraise with us or come on board to help please get
-          in touch here [link to Google Form - individual]
+          in touch{" "}
+          <a
+            href="https://forms.gle/jivsKZTAeduKYWaq5"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            here
+          </a>
+          .
         </p>
       </>
     ),
   },
   {
-    icon: grants,
+    icon: counselling,
     title: "Counselling Services",
     details: (
       <>
@@ -165,7 +193,7 @@ const items = [
     ),
   },
   {
-    icon: fundraising,
+    icon: transport,
     title: "Transport",
     details: (
       <>
@@ -178,28 +206,43 @@ const items = [
     ),
   },
   {
-    icon: partners,
+    icon: education,
     title: "Education",
     details: (
       <>
         <p>
           We provide both educational resources for the public and a hub of
-          resources for clinicians about coronavirus and COVID-19. Check it out
-          here [link to public education resource]
+          resources for clinicians about coronavirus and COVID-19.
         </p>
       </>
     ),
   },
   {
-    icon: transport,
+    icon: grants,
     title: "Grants",
     details: (
       <>
         <p>
-          HEROES delivers hassle-free grants, either paying directly to the
-          partner company for small items like cabs or pizza, or a hardship
-          based fund up to &pound;1000 for childcare, accommodation or
-          transport.
+          HEROES delivers hassle-free grants, either paying for perks directly
+          to the partner company for small items like cabs or pizza, or a
+          support grant based on need up to £1500 for childcare, accommodation
+          or transport.
+        </p>
+        <p>
+          For small grants and other services we verify NHS workers via{" "}
+          <a
+            href="https://www.nhs.net"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            nhs.net
+          </a>{" "}
+          or trust email. For larger grants, NHS workers are verified with a
+          two-step process, including secure email and identification
+          verification via an independent app. Once confirmed as NHS workers,
+          support grants are awarded for specific needs - childcare,
+          accommodation, or travel, due to hardship created by COVID-19. We can
+          deliver funds to a single member only once per funding cycle.
         </p>
       </>
     ),

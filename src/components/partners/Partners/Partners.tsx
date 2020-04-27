@@ -2,15 +2,18 @@ import React from "react"
 
 import * as styles from "./partners.module.scss"
 
-import chilliBees from "../../../images/partners/chilli_bees.png"
-import story from "../../../images/partners/story.png"
-import williamWhite from "../../../images/partners/william_white.png"
-import selfridges from "../../../images/partners/selfridges.png"
-import baylissAndHarding from "../../../images/partners/bayliss_and_harding.png"
-import addisonLee from "../../../images/partners/addison_lee.png"
-import esteeLauder from "../../../images/partners/estee_lauder.png"
-import flavourManagement from "../../../images/partners/flavour_management.png"
-import contractorsAppeal from "../../../images/partners/contractors_appeal.png"
+import chilliBees from "../../../images/partners/chilli_bees1.png"
+import story from "../../../images/partners/story1.png"
+import williamWhite from "../../../images/partners/william_white1.png"
+import selfridges from "../../../images/partners/selfridges_co1.png"
+import baylissAndHarding from "../../../images/partners/baylis_and_harding1.png"
+import addisonLee from "../../../images/partners/addison_lee1.png"
+import esteeLauder from "../../../images/partners/estee_lauder1.png"
+import flavourManagement from "../../../images/partners/flavour_management1.png"
+import candyKittens from "../../../images/partners/candy_kittens1.png"
+import fsc from "../../../images/partners/FSC1.png"
+import noxyBrothers from "../../../images/partners/noxy_brothers1.png"
+import contractorsAppeal from "../../../images/partners/contractors_appeal1.png"
 
 const content = [
   {
@@ -60,6 +63,24 @@ const content = [
     icon: flavourManagement,
     description:
       "The team at Flavour Management represent some of the best chefs in the UK. Tony Singh, Francesco Mazzei, Aldo Zilli and Omar Allibhoy have all cooked the highest quality freshly prepared hot meals for hospitals from Edinburgh to Kent. We’re please continue our partnership, to feed more NHS staff.",
+  },
+  {
+    name: "Candy Kittens",
+    icon: candyKittens,
+    description:
+      "We have partnered with Candy Kittens to deliver thousands of sweet treats to rewarding NHS workers. Candy Kittens kindly lent us vans and even created a HEROES sweet, in stores soon, with proceeds going towards HEROES.",
+  },
+  {
+    name: "Five Star Catering",
+    icon: fsc,
+    description:
+      "We have partnered with Five Star Catering to deliver thousands of meals and ice cream to hospitals via food truck. We will expand the fleet nationwide!",
+  },
+  {
+    name: "Noxy Brothers",
+    icon: noxyBrothers,
+    description:
+      "We partnered with the amazing work of Noxy Brothers Coffee company has delivered free coffee to thousands of NHS workers at two hospital, not only providing vital caffeine to hardworking staff but fundraising over £40,000 as well!",
   },
   // {
   //   name: "Contractors Appeal",
