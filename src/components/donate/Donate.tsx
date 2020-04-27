@@ -97,16 +97,18 @@ class Donate extends React.Component<{}, DonateState> {
           <DonationDetails onChange={this.handleChangeDetails} />
 
         <h2>How would you like to pay?</h2>
-        <p>Select a payment method to make your donation securely.</p>
 
-        <p>If you are making a large donation - please consider using ‘Bank Account’ to reduce our fees </p>
+        <button onClick={this.handleBankedPayment} className={buttonClassNames}>
+          { this.state.loading == 'banked' ? "Loading..." : "Direct Bank Transfer" }
+        </button>
+
+        <p className={sharedStyles.buttonHelp}>Pay direct from your account and we get 100% of your donation</p>
 
         <button onClick={this.handleStripePayment} className={buttonClassNames}>
-          { this.state.loading == 'stripe' ? "Loading..." : "Pay by card" }
+          { this.state.loading == 'stripe' ? "Loading..." : "Credit Card" }
         </button>
-        <button onClick={this.handleBankedPayment} className={buttonClassNames}>
-          { this.state.loading == 'banked' ? "Loading..." : "Pay by bank account" }
-        </button>
+
+        <p className={sharedStyles.buttonHelp}>Paying by card will incur processing fees for Heroes</p>
       </div>
     )
   }
