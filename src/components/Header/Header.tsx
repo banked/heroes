@@ -64,6 +64,11 @@ const Header = ({ whiteHeader = false }: { whiteHeader?: boolean }) => {
             <Link to="/nhs-workers">
               <button className={styles.nhsButton}>NHS Workers</button>
             </Link>
+            <a
+              href="https://www.gofundme.com/f/help-them-help-us"
+              target="_blank"
+              rel="noopener noreferrer"
+            ></a>
             <button className={styles.donateButton}>Donate</button>
           </div>
           <div className={styles.popoutContainer}>
