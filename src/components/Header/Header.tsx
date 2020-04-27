@@ -68,8 +68,9 @@ const Header = ({ whiteHeader = false }: { whiteHeader?: boolean }) => {
               href="https://www.gofundme.com/f/help-them-help-us"
               target="_blank"
               rel="noopener noreferrer"
-            ></a>
-            <button className={styles.donateButton}>Donate</button>
+            >
+              <button className={styles.donateButton}>Donate</button>
+            </a>
           </div>
           <div className={styles.popoutContainer}>
             <PopoutMenu links={links} />
