@@ -5,3 +5,14 @@ body {
   font-family: "Rubik", sans-serif;
   background-color: #f8faff;
 }
+
+@font-face {
+  font-family: PoetsenOne;
+  font-display: swap;
+  font-weight: normal;
+  src: url("../fonts/PoetsenOne-Regular.woff2") format("woff2"),
+    url("../fonts/PoetsenOne-Regular.ttf") format("truetype"),
+    url("../fonts/PoetsenOne-Regular.otf") format("opentype"),
+    url("../fonts/PoetsenOne-Regular.woff") format("woff"),
+    url("../fonts/PoetsenOne-Regular.eot") format("embedded-opentype");
+}

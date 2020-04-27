@@ -1,0 +1,151 @@
+@import "../../../scss/constants.scss";
+
+.container {
+  max-width: 1001px;
+  width: 90%;
+  margin: auto;
+  padding-top: 56px;
+
+  path {
+    fill: #1d2433;
+  }
+}
+
+.headingContainer {
+  max-width: 790px;
+  margin: auto;
+  margin-bottom: 63px;
+}
+
+.title {
+  font-family: PoetsenOne;
+  font-size: 40px;
+  letter-spacing: -1.25px;
+  text-align: center;
+  color: $primary-color;
+}
+
+.byline {
+  opacity: 0.9;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  text-align: center;
+  color: #3b3b4d;
+}
+
+.teamContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  flex-wrap: wrap;
+  &::after {
+    content: "";
+    flex: 0 0 32%;
+    max-width: 290px;
+  }
+}
+
+.member {
+  max-width: 290px;
+  flex: 1 0 33.33333%;
+  // height: 440px;
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.image {
+  border-radius: 13px;
+  box-shadow: 0 3px 7px 0 rgba(126, 139, 157, 0.34);
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $primary-color;
+  margin: 0;
+  margin-top: 8px;
+}
+
+.position {
+  opacity: 0.8;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #3b3b4d;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.quote {
+  opacity: 0.5;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #3b3b4d;
+  margin-top: 5px;
+}
+
+.twitterLink {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  // position: absolute;
+  // bottom: 0;
+}
+
+.twitterLogo {
+  margin-right: 3px;
+}
+
+.twitterHandle {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #3b3b4d;
+}
+
+@media (max-width: 1013px) {
+  .container {
+    max-width: 640px;
+  }
+  .member {
+    flex: 0 48%;
+    width: calc(50% - 21px);
+    padding-right: 10px;
+  }
+  .teamContainer {
+    flex-wrap: wrap;
+    &::after {
+      flex: 0 48%;
+    }
+  }
+}
+
+@media (max-width: 571px) {
+  .teamContainer {
+    max-width: 290px;
+    margin: auto;
+  }
+
+  .member {
+    width: 100%;
+    flex: auto;
+  }
+}

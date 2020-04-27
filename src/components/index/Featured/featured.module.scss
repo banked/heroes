@@ -1,0 +1,58 @@
+@import "../../../scss/constants.scss";
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 59px;
+  margin-bottom: 38px;
+}
+
+.innerContainer {
+  display: inline-flex;
+  align-items: center;
+}
+
+.title {
+  opacity: 0.3;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #1d2433;
+  text-transform: uppercase;
+}
+
+.image {
+  margin: 0 23px;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1150px) {
+  .imageContainer:nth-child(3),
+  .imageContainer:nth-child(5),
+  .imageContainer:nth-child(7),
+  .imageContainer:nth-child(9) {
+    display: none;
+  }
+}
+
+@media (max-width: 779px) {
+  .container {
+    margin-top: 18px;
+  }
+
+  .imageContainer:nth-child(2),
+  .imageContainer:nth-child(8) {
+    display: none;
+  }
+
+  .image {
+    opacity: 1;
+    filter: grayscale(100%);
+  }
+}

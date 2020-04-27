@@ -6,9 +6,9 @@ import { links } from "../../Header/Header"
 
 import * as styles from "./dropDownMenu.module.scss"
 
-import dropDownTriangle from "../../../images/dropDownTriangle.svg"
+import DropDownTriangle from "../../../images/dropDownTriangle.inline.svg"
 
-const DropDownMenu = () => {
+const DropDownMenu = ({ whiteHeader }: { whiteHeader: boolean }) => {
   const [hovered, setHovered] = useState<boolean>(false)
   const ref = useOutsideClick(() => setHovered(false))
   return (
@@ -17,7 +17,10 @@ const DropDownMenu = () => {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       onClick={() => setHovered(true)}
-      className={styles.container}
+      className={classnames(
+        styles.container,
+        whiteHeader ? styles.whiteHeader : ""
+      )}
     >
       <div
         className={classnames(
@@ -26,8 +29,10 @@ const DropDownMenu = () => {
         )}
       >
         <span className={styles.dropDownText}>
-          <img className={styles.dropDownIcon} src={dropDownTriangle} alt="" />
-          About Us
+          <Link to="/about-us">
+            <DropDownTriangle />
+            About Us
+          </Link>
         </span>
         <div className={styles.headerLinks}>
           {links.map(link => (

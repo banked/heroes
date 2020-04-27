@@ -1,0 +1,76 @@
+@import "../../../scss/constants.scss";
+
+.container {
+  max-width: 1060px;
+  width: 90%;
+  margin: auto;
+}
+
+.itemsContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.itemContainer {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 75px;
+}
+
+.title {
+  font-family: PoetsenOne;
+  font-size: 40px;
+  letter-spacing: -1.25px;
+  text-align: center;
+  color: #00a6ff;
+  margin-bottom: 50px;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 0.92;
+  text-align: center;
+  color: #00a6ff;
+  margin-bottom: 10px;
+}
+
+.contentContainer {
+  p {
+    font-size: 16px;
+    line-height: 1.38;
+    color: #000000;
+  }
+
+  ol {
+    list-style: none;
+    counter-reset: item;
+  }
+  li {
+    counter-increment: item;
+    font-size: 16px;
+    line-height: 1.38;
+    color: #000000;
+  }
+  li:before {
+    margin-right: 10px;
+    content: counter(item) ". ";
+    border-radius: 100%;
+    color: $primary-color;
+    text-align: center;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 779px) {
+  .itemContainer {
+    width: 100%;
+  }
+
+  .heading {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,53 @@
+@import "../../../scss/constants.scss";
+
+.container {
+  background-color: #5045fd;
+  position: relative;
+  padding: 30px 0 50px 0;
+  margin-top: 0px;
+  display: none;
+}
+
+.innerContainer {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.title {
+  font-family: PoetsenOne;
+  font-size: 40px;
+  letter-spacing: -1.25px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 19px;
+  margin-top: 0;
+}
+
+.description {
+  font-family: Rubik;
+  font-size: 16px;
+  line-height: 1.38;
+  color: #ffffff;
+}
+
+.moreInfo {
+  border-radius: 3px;
+  background-color: #ffffff;
+  font-size: 20px;
+  // font-family: acumin-pro-extra-condensed;
+  font-weight: 900;
+  line-height: 0.9;
+  text-align: center;
+  color: #5045fd;
+  padding: 12px 45px;
+  border: 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media (max-width: 779px) {
+  .container {
+    display: block;
+  }
+}

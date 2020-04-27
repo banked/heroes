@@ -1,13 +1,18 @@
 @import "../../scss/constants.scss";
 
 .container {
-  width: 90%;
+  width: 100%;
+  background-color: $primary-color;
+}
+
+.innerContainer {
+  width: 95%;
   margin: auto;
   max-width: 1440px;
-  margin-top: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 25px 0;
 }
 
 .desktopContent {
@@ -24,15 +29,7 @@
 .logoLink {
   svg {
     path {
-      fill: #3b3b4d;
-    }
-  }
-
-  &:hover {
-    svg {
-      path {
-        fill: $primary-color;
-      }
+      fill: white;
     }
   }
 }
@@ -41,10 +38,54 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
 
-  @media (max-width: 779px) {
-    display: none;
+.link {
+  font-size: 16px;
+  // font-family: acumin-pro-extra-condensed;
+  font-weight: 900;
+  line-height: 0.9;
+  color: white;
+  text-decoration: none;
+  margin: 0 8px;
+  text-transform: uppercase;
+}
+
+.nhsButton {
+  cursor: pointer;
+  border-radius: 3px;
+  border: solid 1px white;
+  padding: 11px 12px;
+  font-size: 16px;
+  // font-family: acumin-pro-extra-condensed;
+  font-weight: 900;
+  line-height: 0.9;
+  text-align: center;
+  color: white;
+  background-color: transparent;
+  text-transform: uppercase;
+  margin: 0 8px;
+
+  &:hover {
+    color: $primary-color;
+    background-color: white;
   }
+}
+
+.donateButton {
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: #ffc84e;
+  font-size: 16px;
+  // font-family: acumin-pro-extra-condensed;
+  font-weight: 900;
+  line-height: 0.9;
+  text-align: center;
+  color: black;
+  padding: 11px 12px;
+  border: 0;
+  margin: 0 8px;
+  text-transform: uppercase;
 }
 
 .removePadding {
@@ -68,14 +109,52 @@
   margin-right: 20px;
 }
 
+.popoutContainer {
+  display: none;
+}
+
+.whiteHeader {
+  background-color: transparent;
+
+  .nhsButton {
+    background-color: white;
+  }
+
+  .link {
+    color: $primary-color;
+  }
+
+  .nhsButton {
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    background: transparent;
+
+    &:hover {
+      color: white;
+      background: $primary-color;
+      border: 1px solid $primary-color;
+    }
+  }
+
+  .logoLink {
+    svg {
+      path {
+        fill: $primary-color;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .link {
+    display: none;
+  }
+}
+
 @media (max-width: 779px) {
   .container {
     background: $primary-color;
     width: 100%;
-    margin-top: 0;
-    height: 42px;
-    padding-top: 10px;
-    padding-bottom: 10px;
     position: fixed;
     top: 0;
     left: 0;
@@ -83,38 +162,44 @@
     z-index: 50;
   }
 
-  .popoutContainer {
-    padding-right: 20px;
+  .innerContainer {
+    padding: 17px 0;
   }
 
-  .logoSmall {
-    display: block;
-  }
-
-  .logoLarge {
+  .links {
     display: none;
   }
 
-  .logoLink {
-    position: relative;
-    padding-left: 20px;
+  .desktopContent {
+    width: 95%;
+    margin: auto;
+  }
 
+  .donateButton {
+    background: $primary-color;
+    color: white;
+    margin-right: 0;
+  }
+
+  .logoLink {
     svg {
       path {
-        fill: #fff;
+        fill: white;
       }
     }
+  }
 
-    &:hover {
+  .whiteHeader {
+    .logoLink {
       svg {
         path {
-          fill: #fff;
+          fill: white;
         }
       }
     }
   }
 
-  .removePadding {
-    display: flex;
+  .popoutContainer {
+    display: block;
   }
 }

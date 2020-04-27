@@ -6,16 +6,12 @@ import googleForms from "../../../images/googleForms.png"
 
 const links = [
   {
-    displayText: "Corporate Partnerships",
-    link: "https://forms.gle/yoVQgSsYpRGqfpmPA",
+    displayText: "I Want More Information",
+    link: "https://forms.gle/uFmNtFXtH3JHaC4H7",
   },
   {
-    displayText: "General Enquiries",
-    link: "https://forms.gle/sYgjsWdeqrqbA9pL9",
-  },
-  {
-    displayText: "Volunteering",
-    link: "https://forms.gle/4TYodzTUtybRRu9D9",
+    displayText: "I Want To Help",
+    link: "https://forms.gle/jivsKZTAeduKYWaq5",
   },
 ]
 

@@ -1,0 +1,83 @@
+@import "../../../scss/constants.scss";
+
+.container {
+  width: 100%;
+  display: none;
+  background-color: white;
+}
+
+.innerContainer {
+  width: 90%;
+  margin: auto;
+  padding: 40px 0 50px 0;
+}
+
+.statContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 37px;
+  margin-top: 30px;
+}
+
+.statIconContainer {
+  margin-right: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stat {
+  font-size: 34px;
+  font-weight: 500;
+  color: $primary-color;
+  margin-right: 10px;
+}
+
+.statDescription {
+  font-size: 18px;
+  color: #2b0392;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  width: 100%;
+  max-width: 344px;
+  border-radius: 3px;
+  background-color: #00a6ff;
+  padding: 20px 0;
+  font-size: 30px;
+  // font-family: acumin-pro-extra-condensed;
+  font-weight: 900;
+  line-height: 0.6;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 0;
+  cursor: pointer;
+}
+
+.title {
+  font-family: PoetsenOne;
+  font-size: 42px;
+  letter-spacing: -1px;
+  color: #00a6ff;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.38;
+  color: #000000;
+  margin: 0;
+}
+
+@media (max-width: 779px) {
+  .container {
+    display: block;
+  }
+}

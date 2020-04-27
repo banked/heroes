@@ -1,0 +1,175 @@
+@import "../../../scss/constants.scss";
+@import "../../../scss/mixins.scss";
+
+.container {
+  max-width: 1087px;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 200px;
+  padding-bottom: 100px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.textContent {
+  width: 324px;
+  max-width: 90vw;
+  background: $primary-color;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: auto;
+  border-radius: 6px;
+  padding: 30px;
+  z-index: 1;
+  display: none;
+}
+
+.itemContainer {
+  padding-bottom: 40px;
+  position: relative;
+  margin: 0 25px;
+  height: 118px;
+
+  &:hover {
+    .textContent {
+      display: block;
+    }
+  }
+}
+
+.logoContainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  max-width: 100%;
+  mix-blend-mode: multiply;
+}
+
+.title {
+  font-family: PoetsenOne;
+  font-size: 40px;
+  letter-spacing: -1.25px;
+  text-align: center;
+  color: $primary-color;
+
+  @media (max-width: 453px) {
+    font-size: 30px;
+  }
+}
+
+.byline {
+  max-width: 790px;
+  opacity: 0.6;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  text-align: center;
+  color: #3b3b4d;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.heading {
+  font-size: 17px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.text {
+  opacity: 0.9;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media (max-width: 779px) {
+  .container {
+    margin: auto;
+  }
+
+  .content {
+    flex-wrap: wrap;
+  }
+
+  .itemContainer {
+    width: calc(50% - 50px);
+    height: auto;
+  }
+
+  .logoContainer {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+  }
+
+  .textContent {
+    position: relative;
+    display: flex;
+    background: transparent;
+    width: calc(100%);
+  }
+
+  .heading {
+    display: none;
+  }
+
+  .text {
+    color: #444358;
+    opacity: 0.6;
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  border-radius: 3px;
+  background-color: $primary-color;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 0.9;
+  text-align: center;
+  color: white;
+  border: 0;
+  padding: 11px 34px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.bmaLogoContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 591px) {
+  .itemContainer {
+    width: 100%;
+  }
+}

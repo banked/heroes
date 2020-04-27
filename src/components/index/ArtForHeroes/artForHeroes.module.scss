@@ -1,0 +1,163 @@
+@import "../../../scss/constants.scss";
+
+.container {
+  position: relative;
+  max-width: 1080px;
+  width: 100%;
+  margin: 100px auto;
+  border-radius: 3px;
+  overflow: hidden;
+
+  a {
+    text-decoration: none;
+  }
+
+  &:hover {
+    .overlay {
+      display: flex;
+    }
+  }
+}
+
+.innerContainer {
+  width: 90%;
+  margin: auto;
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 166, 255, 0.9);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titleContainer {
+  position: absolute;
+  bottom: 17%;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  background: $primary-color;
+  display: inline;
+  font-family: PoetsenOne;
+  font-size: 40px;
+  letter-spacing: -1.25px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 14px 30px;
+  margin: 0;
+}
+
+.overlayTitle {
+  font-family: PoetsenOne;
+  font-size: 40px;
+  letter-spacing: -1.25px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.description {
+  max-width: 362px;
+  font-family: Rubik;
+  font-size: 16px;
+  line-height: 1.38;
+  color: #ffffff;
+  text-align: center;
+}
+
+.button {
+  border-radius: 3px;
+  background-color: #ffffff;
+  font-size: 20px;
+  // font-family: acumin-pro-extra-condensed;
+  font-weight: 900;
+  line-height: 0.9;
+  text-align: center;
+  color: #00a6ff;
+  padding: 12px 45px;
+  border: 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.partners {
+  margin-top: 40px;
+}
+
+.image {
+  width: 100%;
+}
+
+@media (max-width: 850px) {
+  .partners {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 779px) {
+  .container {
+    background: white;
+    margin: 0;
+    padding-bottom: 30px;
+  }
+  .innerContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .title,
+  .partners {
+    display: none;
+  }
+
+  .overlay {
+    position: relative;
+    display: flex;
+    background: transparent;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .overlayTitle {
+    color: $primary-color;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .description {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .button {
+    background: $primary-color;
+    border-radius: 3px;
+    color: white;
+    margin-bottom: 20px;
+  }
+}

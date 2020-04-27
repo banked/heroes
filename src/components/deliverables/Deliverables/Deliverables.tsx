@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react"
+import React, { useRef, useState, useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img, { FluidObject } from "gatsby-image"
 import classnames from "classnames"
@@ -108,20 +108,34 @@ const quoteTile = (data: Item) => (
   </div>
 )
 
-const Deliverables = () => {
+const Deliverables = ({
+  title,
+  byline,
+  loadMore = false,
+}: {
+  title: string
+  byline?: string
+  loadMore?: boolean
+}) => {
+  const allItems = itemsQuery().allMarkdownRemark.edges
+  const reducedItems = allItems.slice(0, 4)
   const [showContent, setShowContent] = useState<boolean>(false)
-  const ref = useRef(null)
-  const rawItems = itemsQuery()
-  const items = rawItems.allMarkdownRemark.edges
+  const [extraContentActive, setExtraContentActive] = useState<boolean>(
+    !loadMore
+  )
+  const [activeItems, setActiveItems] = useState(
+    !loadMore ? allItems : reducedItems
+  )
+  const ref = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    setActiveItems(extraContentActive ? allItems : reducedItems)
+  }, [extraContentActive])
 
   return (
     <div ref={ref} className={styles.container}>
-      <h1 className={styles.title}>What We've Done</h1>
-      <h4 className={styles.byline}>
-        We've been blown away by the support and enthusiasm to date, and have
-        already delivered meals, and masks to hospitals, with plenty more to
-        come.
-      </h4>
+      <h1 className={styles.title}>{title}</h1>
+      {byline && <h4 className={styles.byline}>{byline}</h4>}
       <Masonry
         options={{ transitionDuration: 0 }}
         onLayoutComplete={() => setShowContent(true)}
@@ -130,7 +144,7 @@ const Deliverables = () => {
           showContent ? styles.showContent : ""
         )}
       >
-        {items.map((item: Item) => {
+        {activeItems.map((item: Item) => {
           if (item.node.frontmatter.quote) {
             return quoteTile(item)
           } else if (item.node.frontmatter.videoLink) {
@@ -141,6 +155,17 @@ const Deliverables = () => {
           return null
         })}
       </Masonry>
+      <div className={styles.buttonContainer}>
+        <button
+          onClick={() => setExtraContentActive(true)}
+          className={classnames(
+            styles.loadMore,
+            extraContentActive ? styles.hidden : null
+          )}
+        >
+          Load More
+        </button>
+      </div>
     </div>
   )
 }

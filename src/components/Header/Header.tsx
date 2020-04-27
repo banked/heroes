@@ -1,31 +1,33 @@
 import React from "react"
 import { Link } from "gatsby"
 import classnames from "classnames"
-import GofundmeButton from "../index/shared/GofundmeButton"
 import PopoutMenu from "./PopoutMenu"
-import DropDownMenu from "../shared/DropDownMenu"
 
 import * as styles from "./header.module.scss"
 
 import Logo from "../../images/logo.inline.svg"
-import LogoSmall from "../../images/logoSmall.inline.svg"
+import DropDownMenu from "../shared/DropDownMenu"
 
 export const links = [
   {
-    displayText: "Ambassadors",
-    link: "ambassadors",
+    displayText: "Partners",
+    link: "partners",
   },
   {
     displayText: "Team",
     link: "team",
   },
   {
-    displayText: "Collaborators",
-    link: "collaborators",
+    displayText: "Ambassadors",
+    link: "ambassadors",
   },
   {
     displayText: "What We've Done",
     link: "what-we-have-done",
+  },
+  {
+    displayText: "Beneficiaries",
+    link: "beneficiaries",
   },
   {
     displayText: "News",
@@ -37,33 +39,43 @@ export const links = [
   },
 ]
 
-const Header = ({ homepage = false }: { homepage?: boolean }) => {
+const Header = ({ whiteHeader = false }: { whiteHeader?: boolean }) => {
   return (
     <div
       className={classnames(
         styles.container,
-        homepage ? styles.removePadding : null
+        whiteHeader ? styles.whiteHeader : null
       )}
     >
-      <div className={styles.desktopContent}>
-        <Link className={styles.logoLink} to="/">
-          <div className={styles.logoLarge}>
-            <Logo />
+      <div className={styles.innerContainer}>
+        <div className={styles.desktopContent}>
+          <Link className={styles.logoLink} to="/">
+            <div className={styles.logoLarge}>
+              <Logo />
+            </div>
+          </Link>
+          <div className={styles.links}>
+            <DropDownMenu whiteHeader={whiteHeader} />
+            {/* {links.map(link => (
+              <Link className={styles.link} to={link.link} key={link.link}>
+                {link.displayText}
+              </Link>
+            ))} */}
+            <Link to="/nhs-workers">
+              <button className={styles.nhsButton}>NHS Workers</button>
+            </Link>
+            <a
+              href="https://www.gofundme.com/f/help-them-help-us"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className={styles.donateButton}>Donate</button>
+            </a>
           </div>
-          <div className={styles.logoSmall}>
-            <LogoSmall />
+          <div className={styles.popoutContainer}>
+            <PopoutMenu links={links} />
           </div>
-        </Link>
-        <div className={styles.links}>
-          <div className={styles.dropdownContainer}>
-            <DropDownMenu />
-          </div>
-          <span className={styles.donateText}>Donate Now</span>
-          <GofundmeButton />
         </div>
-      </div>
-      <div className={styles.popoutContainer}>
-        <PopoutMenu links={links} />
       </div>
     </div>
   )

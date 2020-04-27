@@ -14,14 +14,11 @@
 }
 
 .heading {
-  font-size: 42px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 2px;
+  font-family: PoetsenOne;
+  font-size: 40px;
+  letter-spacing: -1.25px;
   text-align: center;
-  color: #3b3b4d;
+  color: $primary-color;
 }
 
 .byline {
@@ -50,8 +47,8 @@
   width: 100%;
   height: 59px;
   border-radius: 6px;
-  box-shadow: 0 8px 0 0 #1574f6;
-  background-color: #5045fd;
+  box-shadow: 0 8px 0 0 #0c79d9;
+  background-color: $primary-color;
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
@@ -73,4 +70,6 @@
 .googleFormsLogo {
   display: block;
   margin: auto;
+  opacity: 0.5;
+  width: 150px;
 }
