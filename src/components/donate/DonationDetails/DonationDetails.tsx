@@ -86,7 +86,7 @@ class DonationDetails extends React.Component<Props, DonationDetailsState> {
               checked={termsAndConditions}
               id="payment_session_terms_and_conditions"
             />
-            I have read and accept the <a href="#">terms &amp; conditions</a>
+            I have read and agree the <a href="https://www.helpthemhelpus.co.uk/privacy/">privacy policy</a>
             </label>
           </div>
         </div>
