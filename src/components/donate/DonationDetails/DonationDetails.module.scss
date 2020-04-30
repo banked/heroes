@@ -1,0 +1,50 @@
+.details__fields {
+    div {
+    display: flex;
+    flex-direction: column;
+    }
+}
+
+
+.inputLabel {
+    display: block;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 15px 0 15px 15px;
+    color: rgba(29, 36, 51, 0.5);
+    font-weight: bold;
+}
+
+.input {
+    padding: 20px;
+    border: 1px solid rgba(29, 36, 51, 0.2);
+    border-radius: 6px;
+    background: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.input_error {
+    border-color: #EB4B18;
+}
+
+.error {
+    color: #EB4B18;
+    font-size: 13px;
+    padding-left: 30px;
+    margin-bottom: -14px;
+}
+
+.termsAndConditions {
+    margin-top: 50px;
+    color: rgba(29, 36, 51, 0.5);
+    font-size: 14px;
+    line-height: 17px;
+    input {
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+    a {
+        color: #00a6ff;
+        text-decoration: none;
+    }
+}

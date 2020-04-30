@@ -1,0 +1,65 @@
+.button {
+  display: block;
+  padding: 20px 40px;
+  border-radius: 6px;
+  background-color: #98989C;
+  border: 0;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.94px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 42px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.layout {
+  text-align: center;
+}
+
+.successText {
+  border-bottom: 2px solid #D8D8D8;
+  padding-bottom: 40px;
+  margin-bottom: 30px;
+}
+
+.errorText {
+  margin-bottom: 50px;
+}
+
+.buttonEnabled {
+  background-color: #ffc84e;
+  color: black;
+}
+
+.social {
+  margin-top: 30px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+
+  path {
+    fill: #3b3b4d;
+    opacity: 0.5;
+  }
+}
+
+.social:hover {
+  path{ 
+    fill: #00a6ff;
+    opacity: 1;
+  }
+}
+
+.buttonHelp {
+  margin-top: -20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
