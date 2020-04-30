@@ -1,6 +1,6 @@
 const ENDPOINTS = {
-    'banked': "https://europe-west2-banked-heroes-dev.cloudfunctions.net/createBankedPaymentRequest",
-    'stripe': "https://europe-west2-banked-heroes-dev.cloudfunctions.net/createStripePaymentRequest",
+    'banked': "https://europe-west2-heroes-a923a.cloudfunctions.net/createBankedPaymentRequest",
+    'stripe': "https://europe-west2-heroes-a923a.cloudfunctions.net/createStripePaymentRequest",
 }
 
 export type ProviderType = "stripe" | "banked";
