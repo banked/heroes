@@ -28,13 +28,13 @@ const DonateSuccessPage = () => {
             <p>Please follow us on social, and share with friends &amp; family.</p>
             <p>Stay Safe.</p>
           </div>
-          <OutboundLink eventCategory='button' eventAction='click' eventLabel='Twitter' target='_blank' href={`https://twitter.com/intent/tweet?${querystring.stringify({ text: shareText, hashtags: hashtags, via: twitterHandle, url: url })}`}>
+          <OutboundLink eventCategory='Social Button' eventAction='Click' eventLabel='Twitter' target='_blank' href={`https://twitter.com/intent/tweet?${querystring.stringify({ text: shareText, hashtags: hashtags, via: twitterHandle, url: url })}`}>
             <Twitter className={styles.social}/>
           </OutboundLink>
-          <OutboundLink eventCategory='button' eventAction='click' eventLabel='Facebook' target='_blank' href={`https://www.facebook.com/dialog/share?${querystring.stringify({ app_id: 1162396377486086, display: 'page', href: url, quote: shareText })}`}>
+          <OutboundLink eventCategory='Social Button' eventAction='Click' eventLabel='Facebook' target='_blank' href={`https://www.facebook.com/dialog/share?${querystring.stringify({ app_id: 1162396377486086, display: 'page', href: url, quote: shareText })}`}>
             <Facebook className={styles.social}/>
           </OutboundLink>
-          <OutboundLink eventCategory='button' eventAction='click' eventLabel='Linkedin' target='_blank' href={`https://www.linkedin.com/sharing/share-offsite?${querystring.stringify({ url: url })}`}>
+          <OutboundLink eventCategory='Social Button' eventAction='Click' eventLabel='Linkedin' target='_blank' href={`https://www.linkedin.com/sharing/share-offsite?${querystring.stringify({ url: url })}`}>
             <LinkedIn className={styles.social}/>
           </OutboundLink>
         </div>

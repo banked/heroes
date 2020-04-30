@@ -52,7 +52,7 @@ class Donate extends React.Component<{}, DonateState> {
     this.setState({ loading: provider })
 
     trackCustomEvent({
-      category: "Button",
+      category: "Payment Button",
       action: "Click",
       label: `Pay with ${provider}`,
       value: amount,
