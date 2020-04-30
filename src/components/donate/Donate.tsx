@@ -11,6 +11,8 @@ import {loadStripe} from '@stripe/stripe-js';
 import { ProviderType, makePaymentRequest } from './api';
 
 
+const STRIPE_PUBLISHABLE_KEY = 'pk_live_vyGw0vW5IVi61KXe5bPeELPd00pPbF7Dfb'
+
 interface DonateState {
   name: string;
   email: string;
@@ -62,7 +64,7 @@ class Donate extends React.Component<{}, DonateState> {
       case 'banked':
         window.location.href = response.url;
       case 'stripe':
-        loadStripe('pk_test_Yh98EHayrmthPaB6UmyCH5dv').then((stripe: any) => {
+        loadStripe(STRIPE_PUBLISHABLE_KEY).then((stripe: any) => {
           stripe.redirectToCheckout({ sessionId: response.sessionId })
         })
       }
